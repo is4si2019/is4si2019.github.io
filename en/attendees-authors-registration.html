@@ -1,0 +1,2303 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#" xml:lang="en-gb" lang="en-gb" dir="ltr">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="../templates/gaia-theme/js/jQuery_Migrate.js"></script>
+
+<!-- add fonts for froala -->
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700,700italic&subset=latin,vietnamese,latin-ext,cyrillic,cyrillic-ext,greek-ext,greek' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700&subset=latin,greek,greek-ext,vietnamese,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
+
+<meta property="og:image" content="https://dryfta-assets.s3-accelerate.amazonaws.com/assets/is4si2019/images/1552162878smallworldorangenetworki.png" />
+
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <base href="" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="ALL" />
+  <meta name="author" content="dryfta.com" />
+  <meta name="language" content="English" />
+  <meta name="submission" content="http://dryfta.com" />
+  <meta name="contact" content="support@dryfta.com" />
+  <meta name="format" content="text/html" />
+  <meta name="document-classification" content="Event Management Platform" />
+  <meta name="document-distribution" content="Global" />
+  <title>Registration</title>
+  <link href="../templates/gaia-theme/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link rel="stylesheet" href="../templates/system/css/editor.css" type="text/css" />
+  <link rel="stylesheet" href="../media/system/css/calendar-jos.css" type="text/css"  title="Green"  media="all" />
+  <link rel="stylesheet" href="../templates/system/css/froala_editor.pkgd.min.css" type="text/css" />
+  <link rel="stylesheet" href="../templates/system/css/froala_style.min.css" type="text/css" />
+  <style type="text/css">
+/* Mark: attempt to override -- not working */
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+}
+
+
+
+.dryfta_event_detail h1 {
+  font-family: inherit;
+  font-size: 38px;
+  margin: 20px 0 20px;
+  text-align: center;
+}
+
+.starter-template h2 {
+  font-family: inherit;
+  font-size: 32px;
+  margin: 20px 0 20px;
+  text-align: center;
+}
+
+.item-page h2, .item-page h4 {
+  font-family: inherit;
+}
+/* text */
+
+div.page-of-text {
+  width: 75%;
+  max-width: 600px;
+  min-width: 400px;
+}
+
+/* speakers */
+.speaker-box {
+  display: flex;
+  flex-wrap: wrap;
+  vertical-align: top;
+}
+
+.speaker {
+  margin: auto;
+  width: 240px;
+  height: 360px;
+  text-align: center;
+  
+}
+
+.speaker-image {
+  width: 200px;
+  margin: auto;
+}
+
+.speaker-image img {
+  border-radius: 50%;
+}
+
+.ical_gcal-box {
+display:none;
+}
+
+.title_banner_box {
+ line-height: 35px !important;
+}
+
+.drfta_NoData {
+display:none; !important;
+}
+
+
+/*@media only screen 
+and (max-width : 1600px) {
+  .register-button {
+    display:none;
+  }
+}
+*/
+  </style>
+  <script src="../media/system/js/calendar.js" type="text/javascript"></script>
+  <script src="../media/system/js/calendar-setup.js" type="text/javascript"></script>
+  <script src="../media/system/js/mootools-core.js" type="text/javascript"></script>
+  <script src="../media/system/js/core.js" type="text/javascript"></script>
+  <script src="../media/system/js/mootools-more.js" type="text/javascript"></script>
+  <script type="text/javascript">
+Calendar._DN = new Array ("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"); Calendar._SDN = new Array ("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"); Calendar._FD = 0; Calendar._MN = new Array ("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"); Calendar._SMN = new Array ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"); Calendar._TT = {};Calendar._TT["INFO"] = "About the Calendar"; Calendar._TT["ABOUT"] =
+ "DHTML Date/Time Selector\n" +
+ "(c) dynarch.com 2002-2005 / Author: Mihai Bazon\n" +
+"For latest version visit: http://www.dynarch.com/projects/calendar/\n" +
+"Distributed under GNU LGPL.  See http://gnu.org/licenses/lgpl.html for details." +
+"\n\n" +
+"Date selection:\n" +
+"- Use the « and » buttons to select year\n" +
+"- Use the < and > buttons to select month\n" +
+"- Hold mouse button on any of the above buttons for faster selection.";
+Calendar._TT["ABOUT_TIME"] = "\n\n" +
+"Time selection:\n" +
+"- Click on any of the time parts to increase it\n" +
+"- or Shift-click to decrease it\n" +
+"- or click and drag for faster selection.";
+
+		Calendar._TT["PREV_YEAR"] = "Click to move to the previous year. Click and hold for a list of years."; Calendar._TT["PREV_MONTH"] = "Click to move to the previous month. Click and hold for a list of the months."; Calendar._TT["GO_TODAY"] = "Go to today"; Calendar._TT["NEXT_MONTH"] = "Click to move to the next month. Click and hold for a list of the months."; Calendar._TT["NEXT_YEAR"] = "Click to move to the next year. Click and hold for a list of years."; Calendar._TT["SEL_DATE"] = "Select a date."; Calendar._TT["DRAG_TO_MOVE"] = "Drag to move"; Calendar._TT["PART_TODAY"] = "Today"; Calendar._TT["DAY_FIRST"] = "Display %s first"; Calendar._TT["WEEKEND"] = "0,6"; Calendar._TT["CLOSE"] = "Close"; Calendar._TT["TODAY"] = "Today"; Calendar._TT["TIME_PART"] = "(Shift-)Click or Drag to change the value."; Calendar._TT["DEF_DATE_FORMAT"] = "%Y-%m-%d"; Calendar._TT["TT_DATE_FORMAT"] = "%a, %b %e"; Calendar._TT["WK"] = "wk"; Calendar._TT["TIME"] = "Time:";window.addEvent('domready', function() {
+			$$('.hasTip').each(function(el) {
+				var title = el.get('title');
+				if (title) {
+					var parts = title.split('::', 2);
+					el.store('tip:title', parts[0]);
+					el.store('tip:text', parts[1]);
+				}
+			});
+			var JTooltips = new Tips($$('.hasTip'), { maxTitleChars: 50, fixed: false});
+		});window.addEvent('domready', function() {Calendar.setup({
+				// Id of the input field
+				inputField: "hidden_date",
+				// Format of the input field
+				ifFormat: "%Y-%m-%d",
+				// Trigger for the calendar (button ID)
+				button: "hidden_date_img",
+				// Alignment (defaults to "Bl")
+				align: "Tl",
+				singleClick: true,
+				firstDay: 0
+				});});
+  </script>
+
+
+
+
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+ 
+
+      <!-- Dryfta core CSS -->
+<link href="../templates/gaia-theme/css/font-dryfta.css" rel="stylesheet">
+      <link href="../templates/gaia-theme/css/bootstrap.min.css" rel="stylesheet">
+      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug 
+      <link href="https://is4si2019.com/templates/gaia-theme/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    Custom styles for this template -->
+      <link href="../templates/gaia-theme/css/template.css" rel="stylesheet">
+         <link href="../templates/gaia-theme/css/mobile.css" rel="stylesheet">
+      <link href="../templates/gaia-theme/css/footer.css" rel="stylesheet">
+<link href="../templates/gaia-theme/css/signin.css" rel="stylesheet">
+      <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+      <!--[if lt IE 9]><script src="/templates/gaia-theme/js/ie8-responsive-file-warning.js"></script><![endif]-->
+      <script src="../templates/gaia-theme/js/ie-emulation-modes-warning.js"></script>
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+  if(sessionStorage.copmb == null){
+    if (navigator.userAgent.indexOf('MSIE') != -1)
+      var detectIEregexp = /MSIE (\d+\.\d+);/ //test for MSIE x.x
+    else // if no "MSIE" string in userAgent
+      var detectIEregexp = /Trident.*rv[ :]*(\d+\.\d+)/ //test for rv:x.x or rv x.x where Trident string exists
+
+    var path = "https://is4si2019.com/supported_browsers.html";
+    if (detectIEregexp.test(navigator.userAgent)){ 
+      var ieversion=new Number(RegExp.$1) // capture x.x portion and store as a number
+      if(ieversion>=11){
+        $('body').prepend('<div style="text-align:center;padding:8px;background:#FFF1A8 none repeat scroll 0 0" id="browsercomp_msg"><span>This version of Internet Explorer is no longer supported. Please upgrade to a <a style="color:#2A5BC5;" target="blank" href="'+path+'.html">supported browser</a>.</span> <span><a style="color:#2A5BC5;" onclick="closeBrowserMsg();" href="javascript:void(0);">Dismiss</a></span></div>');
+      }
+    }
+  }
+  
+  checkOnline();
+  
+    //code to add froala "fr-view" class in the section which are displaying editor content.
+	jQuery( ".dryfta_event_detail" ).addClass( "fr-view" ); //event detail - home page
+	jQuery( ".fr-editor-text-content" ).addClass( "fr-view" ); //article page
+	jQuery( ".mod_description" ).addClass( "fr-view" ); //custom widget description
+	jQuery( ".dryfta_user_instruction" ).addClass( "fr-view" ); //user instructions
+	jQuery( ".sessiondisc" ).addClass( "fr-view" ); //session description
+	jQuery( ".ses-detail-sub-ses-description" ).addClass( "fr-view" ); //sub-session description - detail page
+	jQuery( ".p-list-sub-ses-description" ).addClass( "fr-view" ); //sub-session description - list page
+	jQuery( ".dryftaDetail" ).addClass( "fr-view" ); //abstract archive
+});
+
+function closeBrowserMsg(){
+  var elem = document.getElementById("browsercomp_msg");
+  elem.parentElement.removeChild(elem);
+  sessionStorage.copmb = 1;
+}
+
+function checkOnline(){
+    setInterval("doOnlineCheck()", 1000);
+}
+function doOnlineCheck(){
+if(navigator.onLine){
+    
+     document.getElementById('checkInternet').style.display="none";
+ } else {
+    
+   document.getElementById('checkInternet').style.display="block";
+ }
+}
+
+function gotoTopSection(){
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+<meta name="google-site-verification" content="7AcgGf-UiASKoQT5c1tkPyvR6uT0zxUgko07H5udEDE" />
+<script type="text/javascript">var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-60894180-1']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+          </script></head>
+   <body class="Dryfta_site com_dryfta view-register no-layout no-task itemid-477">
+
+  
+<div class="Top_menu_section_inner">
+<div class="container">
+ 
+<div class="clr"></div>
+
+<nav class="navbar navbar-default navbar-float-top defaultc " role="navigation">
+ 
+            <div class="Logo_part_inner">		<div class="moduletable">
+					
+<script type="text/javascript">
+function gotoContentSection(){
+	document.getElementById('dryftacom_content_section').focus();
+	return false;
+}
+</script>
+
+<div class="dry-logo">
+		<div class="dayfta_logo_img"><a href="../index.html"><img src="https://dryfta-assets.s3-accelerate.amazonaws.com/assets/is4si2019/images/1552162878smallworldorangenetworki.png" alt="Site Logo Image" title="Site Logo Image"/></a>
+	<input type="button" title="Go to content section" value="Go to content section" onclick="gotoContentSection();" style="opacity:0;height: 1px;float: right;width:1px;padding:0;margin:0;"/>
+	</div>
+		<div class="dryfta_logo_title"><a href="../index.html">IS4SI 2019</a>
+	
+	</div>
+</div>
+		</div>
+	</div>
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+
+            </div>
+            <div id="navbar" class="  collapse navbar-collapse">
+ 
+                  
+<ul id="d_mainmenu" class="nav navbar-nav menu">
+    
+<li class="item-858"><a href="107-instructions.html" >Instructions</a></li><li class="item-822 deeper parent"><a href="84-practical.html" >General Information</a><ul><li class="item-862"><a href="84-practical/109-registration-fees-info.html" >Registration Fees Info</a></li><li class="item-808 parent"><a href="84-practical/72-clark-kerr-rooms.html" >On-Campus Rooms</a></li><li class="item-811"><a href="84-practical/74-hotels.html" >Local Hotels</a></li><li class="item-861"><a href="gallery.html" >Conference Venue</a></li><li class="item-826"><a href="84-practical/88-travel-information.html" >Local Travel</a></li><li class="item-827"><a href="84-practical/89-berkeley.html" >Berkeley</a></li><li class="item-857"><a href="84-practical/106-short-attendancc-e.html" >Single day Attendance</a></li><li class="item-848"><a href="84-practical/97-important-dates.html" >Important Dates</a></li></ul></li><li class="item-884"><a href="125-abstract-booklet.html" >Abstract Booklet</a></li><li class="item-849 deeper parent"><a href="98-submissions.html" >Submissions</a><ul><li class="item-850"><a href="98-submissions/99-general-submissions.html" >General Submissions</a></li><li class="item-851"><a href="../98-submissions/100-submissions-to-miniconferences.html" >Miniconferences</a></li></ul></li><li class="item-814"><a href="76-program.html" >Program</a></li><li class="item-684"><a class="Program Schedule" href="program-schedule.html" >Schedule</a></li><li class="item-845"><a href="95-contact-us.html" >Contact US</a></li><li class="item-830 deeper parent"><a href="92-about.html" >About</a><ul><li class="item-828"><a href="92-about/90-privacy-policy.html" >Privacy Policy</a></li><li class="item-829"><a href="92-about/91-terms-and-conditions.html" >Terms and Conditions</a></li><li class="item-831"><a href="92-about/93-refund-cancellation-policy.html" >Refund/Cancellation Policy</a></li><li class="item-835"><a href="http://is4si.org/" target="_blank" >IS4SI Website</a></li></ul></li></ul>
+
+     <script>
+
+function animate(opts)
+{
+var start=new Date
+var id=setInterval(function(){var timePassed=new Date- start
+var progress=timePassed/opts.duration
+if(progress>1)progress=1
+var delta=opts.delta(progress)
+opts.step(delta)
+if(progress==1){clearInterval(id)}},opts.delay||10)
+}
+
+function popupOpenClose()
+{ 
+	var element = document.getElementById("dryfta_popup_message");
+	element.style.display ="none";
+}
+	
+function userLogOutNow(user_type)
+{
+	var url="index.php?option=com_dryfta&view=register&task=userLogoutFromPopup&user_type="+user_type;
+	var obj;
+	try
+	{
+		obj=new ActiveXobject("Microsoft.XMLHTTP"); 
+	}
+	catch(e)
+	{
+		try
+			{
+				obj=new XMLHttpRequest();
+			}
+		catch(e)
+			{ 
+				alert("your browser not support AJAX");
+			}
+	}
+	//step2
+	obj.open("GET",url,true);
+	obj.send(null);
+	//step3
+	obj.onreadystatechange=function()
+		{
+		if(obj.readyState==4)
+		{
+		if(user_type==1)
+		{
+		location.href = "https://is4si2019.com/index.php?option=com_dryfta&view=register&user_type=2";
+		}
+		if(user_type==2)
+		{
+		location.href = "https://is4si2019.com/index.php?option=com_dryfta&view=register";
+		}
+		}
+		
+		}
+
+}	
+ 
+</script>
+<ul id="top_menu_login" class="nav navbar-nav menu">
+<li class="item-507"><a href="userlogin.html" >Login</a></li></ul>
+ 
+ 
+            </div>
+            <!--/.nav-collapse -->
+ 
+      </nav>
+</div>
+</div>
+
+ <div id="dryftacom_content_section" tabindex="-1"><div class="wrapper_component_mod" id="custom_widget_1">
+					  <div class="container">
+					  <div class="dryfta-template">
+						  
+<div id="system-message-container">
+</div>
+						  
+<style>
+.checkbox, .radio{ margin-top:0px;  }
+#Dryfta_ragistration .dryfta-table-cell.checkbox label::before, 
+#Dryfta_ragistration .radio-box_list label::before{margin:0px 9px 5px 0px;}
+#Dryfta_ragistration .dryfta_ragistration_form  div.checkbox, #Dryfta_ragistration .dryfta_ragistration_form div.radio{margin-bottom:0px;  padding-bottom:0px;}
+#Dryfta_ragistration .dryfta_ragistration_form div.checkbox label, #Dryfta_ragistration .dryfta_ragistration_form div.radio label{margin-bottom:3px; padding-bottom:7px;}
+.dryfta-table-cell.dryfta_browse_section .dryfta_upload_file_section{height:36px;}
+.dryfta_ragistration_form .dryfta-table-cell.checkbox:last-child{margin-bottom:10px; padding-bottom:10px;}
+.dryfta_ragistration_form .dryfta-table-cell.checkbox{margin-bottom:0px; padding-bottom:0px;}
+.updateuser_role_heading{
+	padding: 10px 0px;
+    font-weight: 700;
+    font-size: 15px;
+    border-top: dotted #cfcfcf 2px;
+    border-bottom: dotted #cfcfcf 2px;
+    margin: 10px 0;
+    width: 98%;
+}
+.updateuser_role_heading .updateuser_role_info{ float: right; font-size: 11px; width: 50%; text-align: right; }
+
+.dryfta_user_instruction{ margin-top:0px; padding:0px; }
+.dryfta_sub_title{ padding:15px 0px 20px; }
+</style>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXuKg18CJOG5_52LMKDl5hYTkLJ2oTob8" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+	function validateFirst(task)
+	{
+        var emailFilter = /^[a-zA-Z0-9\+._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,15}$/;
+        var phoneNumberPattern =/^(?=[^A-Za-z]+$).*[0-9].*$/ ;
+        var nameRegex = /^[a-zA-Z\u3300-\u9fff\uf900-\ufaff\-_ ’'‘ÆÐƎƏƐƔĲŊŒẞÞǷȜæðǝəɛɣĳŋœĸſßþƿȝĄƁÇĐƊĘĦĮƘŁØƠŞȘŢȚŦŲƯY̨Ƴąɓçđɗęħįƙłøơşșţțŧųưy̨ƴÁÀÂÄǍĂĀÃÅǺĄÆǼǢƁĆĊĈČÇĎḌĐƊÐÉÈĖÊËĚĔĒĘẸƎƏƐĠĜǦĞĢƔáàâäǎăāãåǻąæǽǣɓćċĉčçďḍđɗðéèėêëěĕēęẹǝəɛġĝǧğģɣĤḤĦIÍÌİÎÏǏĬĪĨĮỊĲĴĶƘĹĻŁĽĿʼNŃN̈ŇÑŅŊÓÒÔÖǑŎŌÕŐỌØǾƠŒĥḥħıíìiîïǐĭīĩįịĳĵķƙĸĺļłľŀŉńn̈ňñņŋóòôöǒŏōõőọøǿơœŔŘŖŚŜŠŞȘṢẞŤŢṬŦÞÚÙÛÜǓŬŪŨŰŮŲỤƯẂẀŴẄǷÝỲŶŸȲỸƳŹŻŽẒŕřŗſśŝšşșṣßťţṭŧþúùûüǔŭūũűůųụưẃẁŵẅƿýỳŷÿȳỹƴźżžẓ.]+$/;
+        var customRegex = /^[a-zA-Z0-9\u3300-\u9fff\uf900-\ufaff\-_ ’'!,‘ÆÐƎƏƐƔĲŊŒẞÞǷȜæðǝəɛɣĳŋœĸſßþƿȝĄƁÇĐƊĘĦĮƘŁØƠŞȘŢȚŦŲƯY̨Ƴąɓçđɗęħįƙłøơşșţțŧųưy̨ƴÁÀÂÄǍĂĀÃÅǺĄÆǼǢƁĆĊĈČÇĎḌĐƊÐÉÈĖÊËĚĔĒĘẸƎƏƐĠĜǦĞĢƔáàâäǎăāãåǻąæǽǣɓćċĉčçďḍđɗðéèėêëěĕēęẹǝəɛġĝǧğģɣĤḤĦIÍÌİÎÏǏĬĪĨĮỊĲĴĶƘĹĻŁĽĿʼNŃN̈ŇÑŅŊÓÒÔÖǑŎŌÕŐỌØǾƠŒĥḥħıíìiîïǐĭīĩįịĳĵķƙĸĺļłľŀŉńn̈ňñņŋóòôöǒŏōõőọøǿơœŔŘŖŚŜŠŞȘṢẞŤŢṬŦÞÚÙÛÜǓŬŪŨŰŮŲỤƯẂẀŴẄǷÝỲŶŸȲỸƳŹŻŽẒŕřŗſśŝšşșṣßťţṭŧþúùûüǔŭūũűůųụưẃẁŵẅƿýỳŷÿȳỹƴźżžẓ&,.]+$/;
+        var usernameRegexonlyUserName = /^[a-zA-Z0-9._-]+$/;
+        var usernameRegex = /^[a-zA-Z0-9._-]+$/; 
+        
+        var checkregcode = 0;
+				
+        if(document.adminForm["first_name"].value== '')
+        {
+			jQuery('.multipage_form').hide();
+			jQuery("#first_name").parents('.multipage_form').show();
+            var msg = "First name is required!";
+            alert (msg); 
+            document.adminForm["first_name"].focus();
+            document.adminForm["first_name"].style.borderColor='red';
+            return false;
+        }
+        if(!nameRegex.test(document.adminForm["first_name"].value))
+        {
+			jQuery('.multipage_form').hide();
+			jQuery("#first_name").parents('.multipage_form').show();
+            var msg = "Please enter a valid name. Name cannot have integers and characters.";
+            alert (msg); 
+            document.adminForm["first_name"].focus();
+            document.adminForm["first_name"].style.borderColor='red';
+            return false;
+        }
+        if(document.adminForm["last_name"].value== '')
+        {
+			jQuery('.multipage_form').hide();
+			jQuery("#last_name").parents('.multipage_form').show();
+            var msg = "Last name is required!";
+            alert (msg); 
+            document.adminForm["last_name"].focus();
+            document.adminForm["last_name"].style.borderColor='red';
+            return false;
+        }
+        if(!nameRegex.test(document.adminForm["last_name"].value))
+        {
+			jQuery('.multipage_form').hide();
+			jQuery("#last_name").parents('.multipage_form').show();
+            var msg = "Please enter a valid name. Name cannot have integers and characters.";
+            alert (msg); 
+            document.adminForm["last_name"].focus();
+            document.adminForm["last_name"].style.borderColor='red';
+            return false;
+        }
+
+        if(document.adminForm["email"].value== "")  
+        {
+			jQuery('.multipage_form').hide();
+			jQuery("#email").parents('.multipage_form').show();
+            alert("Please enter Your email address");
+            document.adminForm["email"].focus();
+            document.adminForm["email"].style.borderColor='red';
+            return false;
+        }
+        if(document.adminForm["email"].value != "" && !emailFilter.test(document.adminForm["email"].value))
+        {
+			jQuery('.multipage_form').hide();
+			jQuery("#email").parents('.multipage_form').show();
+            alert("Email is not valid!");
+            document.adminForm["email"].focus();
+            document.adminForm["email"].style.borderColor='red';
+            return false;
+        }       
+        
+                if(document.adminForm["password"].value!= '' || document.adminForm["repassword"].value!='')
+        {
+            var str = document.adminForm["password"].value;
+            if(document.adminForm["password"].value.length < 8)
+            {
+				jQuery('.multipage_form').hide();
+				jQuery("#password").parents('.multipage_form').show();
+                var msg = "The password should be at least 8 characters long.";
+                alert (msg); 
+                document.adminForm["password"].focus();
+                document.adminForm["repassword"].style.borderColor='red';
+                return false;
+            }
+            if(document.adminForm["password"].value != document.adminForm["repassword"].value)
+            {
+				jQuery('.multipage_form').hide();
+				jQuery("#password").parents('.multipage_form').show();
+                var msg = "Passwords do not match!";
+                alert (msg); 
+                document.adminForm["password"].focus();
+                document.adminForm["repassword"].style.borderColor='red';
+                return false;
+            }
+
+            var spc = str.indexOf(' ');
+            var strtag = str.indexOf('<');
+            var endtag = str.indexOf('>');
+
+            if(spc!='-1' || strtag!='-1' || endtag!='-1'){
+
+				jQuery('.multipage_form').hide();
+				jQuery("#password").parents('.multipage_form').show();
+                var msg = "Spaces and tags are not allowed in password!";
+                alert (msg); 
+                document.adminForm["password"].focus();
+                document.adminForm["password"].style.borderColor='red';
+                return false;
+            
+           }
+        }
+                if(document.adminForm["password"].value=='' || document.adminForm["password"].value==null)
+        {
+			jQuery('.multipage_form').hide();
+			jQuery("#password").parents('.multipage_form').show();
+			var msg = "Password is blank!";
+			alert (msg); 
+			document.adminForm["password"].focus();
+			document.adminForm["password"].style.borderColor='red';
+			return false;
+        }
+        
+        //browse field check 
+        var form_file_fields=document.getElementsByClassName("browser_file_field");
+        //validation for input type custom fields
+        if(form_file_fields.length>0)
+        {
+            for (i = 0; i < form_file_fields.length; i++)
+            {   
+                if(form_file_fields[i].type=="file" && form_file_fields[i].id != 'blogpic')
+                {
+                    var file_allextensions = document.getElementById("file_"+form_file_fields[i].id).value;
+                    file_allextensions = file_allextensions.split(',');
+                    var file_confmemory=parseInt(document.getElementById("file_memory_"+form_file_fields[i].id).value);
+                    var filename = document.getElementById(form_file_fields[i].id);
+                    if(filename.files[0]){
+                    if(filename.files[0].size<=file_confmemory*1000000)
+                    {
+                        imgname = filename.files[0].name;
+                        var fileextension=imgname.split('.').pop();
+                        var count=0;
+                        for(g=0;g<file_allextensions.length;g++)
+                        {
+                        if(file_allextensions[g]==fileextension)
+                        {
+                        count=1;    
+                        }
+                        }
+                        if(count==1)
+                        {
+                            document.getElementById("file_box_"+form_file_fields[i].id).style.borderColor='';  
+                        }
+                        else
+                        {
+							jQuery('.multipage_form').hide();
+							var fieldid = form_file_fields[i].id;
+							var customfid = fieldid.substring(fieldid.lastIndexOf("[")+1,fieldid.lastIndexOf("]"));
+							jQuery("#field_row_"+customfid).parents('.multipage_form').show();
+                            var fieldmainname = document.getElementById("fieldname"+form_file_fields[i].id).innerHTML;
+                            alert(fieldmainname+" must be "+file_allextensions);
+                            document.getElementById("file_box_"+form_file_fields[i].id).style.borderColor='red';
+                            document.getElementById("file_box_"+form_file_fields[i].id).focus();
+                            return false;
+                        }
+                    }
+                    else
+                    {
+						jQuery('.multipage_form').hide();
+						var fieldid = form_file_fields[i].id;
+						var customfid = fieldid.substring(fieldid.lastIndexOf("[")+1,fieldid.lastIndexOf("]"));
+						jQuery("#field_row_"+customfid).parents('.multipage_form').show();
+                        var fieldmainname=document.getElementById("fieldname"+form_file_fields[i].id).innerHTML;
+                        alert(fieldmainname+" must be less than "+file_confmemory+"MB");
+                        document.getElementById("file_box_"+form_file_fields[i].id).style.borderColor='red';
+                        document.getElementById("file_box_"+form_file_fields[i].id).focus();
+                        return false;
+                    }
+                    }
+                }
+            }
+        }
+        //browse field check
+
+        var form_input_fields = document.getElementsByClassName("required");
+        //validation for input type custom fields
+        if(form_input_fields.length>0)
+        { 	
+            for (i = 0; i < form_input_fields.length; i++)
+            { 
+            //validation for input type text custom fields
+            if(form_input_fields[i].type!=null)
+            {	
+            if(form_input_fields[i].type == "text")
+            {  	
+				var customRegex1 = customRegex;
+                if(form_input_fields[i].className=='required' || form_input_fields[i].className=='required dryfta_register_dateBox') 
+                {
+                if(document.getElementById(form_input_fields[i].id).value=='')
+                {
+				jQuery('.multipage_form').hide();
+				var fieldid = form_input_fields[i].id;
+				var customfid = fieldid.substring(fieldid.lastIndexOf("[")+1,fieldid.lastIndexOf("]"));
+				jQuery("#field_row_"+customfid).parents('.multipage_form').show();
+                var fieldmainname=document.getElementById("fieldname"+form_input_fields[i].id).innerHTML;
+                alert(fieldmainname+" is required!");
+                document.getElementById(form_input_fields[i].id).style.borderColor='red';
+                document.getElementById(form_input_fields[i].id).focus();
+                return false;
+                }
+                else
+                {   
+					if(form_input_fields[i].id == 'custom[91]'){ customRegex1 = phoneNumberPattern; }
+					if(form_input_fields[i].id == 'custom[91]' && !customRegex1.test(document.getElementById(form_input_fields[i].id).value))
+					{
+						var fieldmainname = document.getElementById("fieldname"+form_input_fields[i].id).innerHTML;
+						if(form_input_fields[i].id == 'custom[91]'){
+							alert(fieldmainname+"  only accepts numerals.");
+						}else{
+						 alert(fieldmainname+" Only alpha/numeric characters allowed."); 
+						}
+					jQuery('.multipage_form').hide();
+					var fieldid = form_input_fields[i].id;
+					var customfid = fieldid.substring(fieldid.lastIndexOf("[")+1,fieldid.lastIndexOf("]"));
+					jQuery("#field_row_"+customfid).parents('.multipage_form').show();
+					document.getElementById(form_input_fields[i].id).style.borderColor='red';
+					document.getElementById(form_input_fields[i].id).focus();
+					return false;
+					}else{
+					document.getElementById(form_input_fields[i].id).style.borderColor='';
+					}               
+                }
+                }
+                else
+                {
+				}
+            }
+            }
+            //validation for input type checkbox custom fields
+            if(form_input_fields[i].type == "checkbox")
+            {	
+                if(form_input_fields[i].className=='required')
+                {
+					var k,chks = document.getElementsByName(form_input_fields[i].name); 
+					var flag=0;
+					for (k = 0; k < chks.length; k++){
+						if (chks[k].checked){
+						flag=1;
+						}
+					}
+					if(flag==0)
+					{
+						jQuery('.multipage_form').hide();
+						var fieldid = form_input_fields[i].name;
+						fieldid = fieldid.slice(0,-2);
+						var customfid = fieldid.substring(fieldid.lastIndexOf("[")+1,fieldid.lastIndexOf("]"));
+						jQuery("#field_row_"+customfid).parents('.multipage_form').show();
+						var fieldmainname = document.getElementById("fieldname"+form_input_fields[i].name).innerHTML;
+						alert(fieldmainname+" is required!");
+						return false;
+					}
+					else
+					{
+						
+					}
+                }
+            }
+            //validation for input type radio custom fields
+            if(form_input_fields[i].type=="radio")
+            {
+                if(form_input_fields[i].className=='required')
+                {
+                var k,chks = document.getElementsByName(form_input_fields[i].name); 
+                
+                var flag=0;
+                for (k = 0; k < chks.length; k++){
+                    if (chks[k].checked){
+                    flag=1;
+                    }
+                        }
+                if(flag==0)
+                {
+				jQuery('.multipage_form').hide();
+				var fieldid = form_input_fields[i].name;
+				var customfid = fieldid.substring(fieldid.lastIndexOf("[")+1,fieldid.lastIndexOf("]"));
+				jQuery("#field_row_"+customfid).parents('.multipage_form').show();
+                var fieldmainname=document.getElementById("fieldname"+form_input_fields[i].name).innerHTML;
+                alert(fieldmainname+" is required!");
+                return false;
+                }
+                else
+                {
+                
+                }
+                }
+            } 
+            if(form_input_fields[i].type=="select-one" || form_input_fields[i].type=="select-multiple")
+            {
+            if(form_input_fields[i].className.split(' ')[0]=='required')
+                {
+                
+                if(document.getElementById(form_input_fields[i].id).value=='')
+                {
+				jQuery('.multipage_form').hide();
+				var fieldid = form_input_fields[i].id;
+				if(form_input_fields[i].type=="select-multiple"){
+					fieldid = fieldid.slice(0,-2);
+				}
+				var customfid = fieldid.substring(fieldid.lastIndexOf("[")+1,fieldid.lastIndexOf("]"));
+				jQuery("#field_row_"+customfid).parents('.multipage_form').show();
+                var fieldmainname=document.getElementById("fieldname"+form_input_fields[i].id).innerHTML;
+                alert(fieldmainname+" is required!");
+                document.getElementById(form_input_fields[i].id).style.borderColor='red';
+                document.getElementById(form_input_fields[i].id).focus();
+                return false;
+                }
+                else
+                {
+                document.getElementById(form_input_fields[i].id).style.borderColor='';  
+                }
+                }
+                
+            }
+            
+            if(form_input_fields[i].type=="file")
+            {
+            if(form_input_fields[i].className.split(' ')[0]=='required')
+                {
+                if(document.getElementById(form_input_fields[i].id).value=='')
+                {
+				jQuery('.multipage_form').hide();
+				var fieldid = form_input_fields[i].id;
+				var customfid = fieldid.substring(fieldid.lastIndexOf("[")+1,fieldid.lastIndexOf("]"));
+				jQuery("#field_row_"+customfid).parents('.multipage_form').show();
+                var fieldmainname=document.getElementById("fieldname"+form_input_fields[i].id).innerHTML;
+                alert(fieldmainname+" is required!");
+                document.getElementById("file_box_"+form_input_fields[i].id).style.borderColor='red';
+                document.getElementById("file_box_"+form_input_fields[i].id).focus();
+                return false;
+                }
+                else
+                {
+                    jQuery('.multipage_form').hide();
+					var fieldid = form_input_fields[i].id;
+					var customfid = fieldid.substring(fieldid.lastIndexOf("[")+1,fieldid.lastIndexOf("]"));
+					jQuery("#field_row_"+customfid).parents('.multipage_form').show();
+                    var file_allextensions=document.getElementById("file_"+form_input_fields[i].id).value;
+                    file_allextensions=file_allextensions.split(',');
+                    var file_confmemory=parseInt(document.getElementById("file_memory_"+form_input_fields[i].id).value);
+                    var filename=document.getElementById(form_input_fields[i].id);
+                    if(filename.files[0].size<=file_confmemory*1000000)
+                    {
+                    imgname=filename.files[0].name;
+                    var fileextension=imgname.split('.').pop();
+                    var count=0;
+                    for(g=0;g<file_allextensions.length;g++)
+                    {
+                    if(file_allextensions[g]==fileextension)
+                    {
+                    count=1;    
+                    }
+                    }
+                    if(count==1)
+                    {
+                    document.getElementById("file_box_"+form_input_fields[i].id).style.borderColor='';  
+                    }
+                    else
+                    {
+					jQuery('.multipage_form').hide();
+					var fieldid = form_input_fields[i].id;
+					var customfid = fieldid.substring(fieldid.lastIndexOf("[")+1,fieldid.lastIndexOf("]"));
+					jQuery("#field_row_"+customfid).parents('.multipage_form').show();
+					var fieldmainname=document.getElementById("fieldname"+form_input_fields[i].id).innerHTML;
+					alert(fieldmainname+" must be "+file_allextensions);
+					document.getElementById("file_box_"+form_input_fields[i].id).style.borderColor='red';
+					document.getElementById("file_box_"+form_input_fields[i].id).focus();
+					return false;
+                    }
+                    }
+                    else
+                    {
+					jQuery('.multipage_form').hide();
+					var fieldid = form_input_fields[i].id;
+					var customfid = fieldid.substring(fieldid.lastIndexOf("[")+1,fieldid.lastIndexOf("]"));
+					jQuery("#field_row_"+customfid).parents('.multipage_form').show();
+                    var fieldmainname=document.getElementById("fieldname"+form_input_fields[i].id).innerHTML;
+					alert(fieldmainname+" must be less than "+file_confmemory+"MB");
+					document.getElementById("file_box_"+form_input_fields[i].id).style.borderColor='red';
+					document.getElementById("file_box_"+form_input_fields[i].id).focus();
+					return false;   
+                    }
+                        
+                }
+                }
+                
+            }
+            
+            if(form_input_fields[i].type=="textarea")
+            {
+                if(form_input_fields[i].className=='required')
+                {
+                if(document.getElementById(form_input_fields[i].id).value=='')
+                {
+				jQuery('.multipage_form').hide();
+				var fieldid = form_input_fields[i].id;
+				var customfid = fieldid.substring(fieldid.lastIndexOf("[")+1,fieldid.lastIndexOf("]"));
+				jQuery("#field_row_"+customfid).parents('.multipage_form').show();
+                var fieldmainname=document.getElementById("fieldname"+form_input_fields[i].id).innerHTML;
+                alert(fieldmainname+" is required!");
+                document.getElementById(form_input_fields[i].id).style.borderColor='red';
+                document.getElementById(form_input_fields[i].id).focus();
+                return false;
+                }
+                else
+                {
+                document.getElementById(form_input_fields[i].id).style.borderColor='';  
+                }
+                }
+            }       
+            }
+    
+        }
+        
+		//External custom fields validation 
+		var form_link_input_fields=document.getElementsByClassName("externalcustom");   
+		if(form_link_input_fields.length>0)
+		{
+            for (i = 0; i < form_link_input_fields.length; i++)
+            {
+            //validation for input type link custom fields
+            if(form_link_input_fields[i].type!=null )
+            {
+            if(form_link_input_fields[i].type=="text")
+            { 
+                if(form_link_input_fields[i].className=='externalcustom required2')
+                {
+                if(document.getElementById(form_link_input_fields[i].id).value=='')
+                {
+				jQuery('.multipage_form').hide();
+				var fieldid = form_link_input_fields[i].id;
+				var customfid = fieldid.substring(fieldid.lastIndexOf("[")+1,fieldid.lastIndexOf("]"));
+				jQuery("#field_row_"+customfid).parents('.multipage_form').show();
+                var fieldmainname=document.getElementById("fieldname"+form_link_input_fields[i].id).innerHTML;
+                alert(fieldmainname+" is required!");
+                document.getElementById(form_link_input_fields[i].id).style.borderColor='red';
+                document.getElementById(form_link_input_fields[i].id).focus();
+                return false;
+                }
+                else{
+                var link=document.getElementById(form_link_input_fields[i].id).value;
+                var urlregex = /^(http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?$/;
+
+                if(!urlregex.test(link))
+                    {
+					jQuery('.multipage_form').hide();
+					var fieldid = form_link_input_fields[i].id;
+					var customfid = fieldid.substring(fieldid.lastIndexOf("[")+1,fieldid.lastIndexOf("]"));
+					jQuery("#field_row_"+customfid).parents('.multipage_form').show();
+                    var fieldmainname=document.getElementById("fieldname"+form_link_input_fields[i].id).innerHTML;
+                    alert(fieldmainname+" is not a valid URL. Please make sure you have added http:// in your URL.");
+                    document.getElementById(form_link_input_fields[i].id).style.borderColor='red';
+                    document.getElementById(form_link_input_fields[i].id).focus();
+                    return false;
+                    }
+                    else
+                    {
+                    document.getElementById(form_link_input_fields[i].id).style.borderColor='';
+                    }
+                }
+                }
+                else if(form_link_input_fields[i].className=='externalcustom')
+                {
+                var link=document.getElementById(form_link_input_fields[i].id).value;
+                var urlregex = /^(http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?$/;
+                if(link!=""){
+                if(!urlregex.test(link))
+                    {
+					jQuery('.multipage_form').hide();
+					var fieldid = form_link_input_fields[i].id;
+					var customfid = fieldid.substring(fieldid.lastIndexOf("[")+1,fieldid.lastIndexOf("]"));
+					jQuery("#field_row_"+customfid).parents('.multipage_form').show();
+                    var fieldmainname=document.getElementById("fieldname"+form_link_input_fields[i].id).innerHTML;
+                    alert(fieldmainname+" is not a valid URL. Please make sure you have added http:// in your URL.");
+                    document.getElementById(form_link_input_fields[i].id).style.borderColor='red';
+                    document.getElementById(form_link_input_fields[i].id).focus();
+                    return false;
+                    }
+                    else
+                    {
+                    document.getElementById(form_link_input_fields[i].id).style.borderColor='';
+                    }
+                }
+                }
+            }
+            }
+            }
+		}
+		
+        //Mail to custom field validation
+		var form_mail_to_input_fields=document.getElementsByClassName("mailtocustom");  
+		if(form_mail_to_input_fields.length>0)
+		{
+            for (i = 0; i < form_mail_to_input_fields.length; i++)
+            {
+            //validation for input type link custom fields
+            if(form_mail_to_input_fields[i].type!=null)
+            {
+            if(form_mail_to_input_fields[i].type=="text")
+            { 
+                if(form_mail_to_input_fields[i].className=='mailtocustom required2')
+                {
+                if(document.getElementById(form_mail_to_input_fields[i].id).value=='')
+                {
+				jQuery('.multipage_form').hide();
+				var fieldid = form_mail_to_input_fields[i].id;
+				var customfid = fieldid.substring(fieldid.lastIndexOf("[")+1,fieldid.lastIndexOf("]"));
+				jQuery("#field_row_"+customfid).parents('.multipage_form').show();
+                var fieldmainname=document.getElementById("fieldname"+form_mail_to_input_fields[i].id).innerHTML;
+                alert(fieldmainname+" is required!");
+                document.getElementById(form_mail_to_input_fields[i].id).style.borderColor='red';
+                document.getElementById(form_mail_to_input_fields[i].id).focus();
+                return false;
+                }
+                else{
+                var mailto=document.getElementById(form_mail_to_input_fields[i].id).value;
+                if(!emailFilter.test(mailto))
+                    {
+					jQuery('.multipage_form').hide();
+					var fieldid = form_mail_to_input_fields[i].id;
+					var customfid = fieldid.substring(fieldid.lastIndexOf("[")+1,fieldid.lastIndexOf("]"));
+					jQuery("#field_row_"+customfid).parents('.multipage_form').show();
+                    var fieldmainname=document.getElementById("fieldname"+form_mail_to_input_fields[i].id).innerHTML;
+                    alert(fieldmainname+" not a valid email address.");
+                    document.getElementById(form_mail_to_input_fields[i].id).style.borderColor='red';
+                    document.getElementById(form_mail_to_input_fields[i].id).focus();
+                    return false;
+                    }
+                    else
+                    {
+                    document.getElementById(form_mail_to_input_fields[i].id).style.borderColor='';
+                    }
+                }
+                }
+                else if(form_mail_to_input_fields[i].className=='mailtocustom')
+                {
+                var mailto=document.getElementById(form_mail_to_input_fields[i].id).value;
+                if(mailto!=""){
+                if(!emailFilter.test(mailto))
+                    {
+					jQuery('.multipage_form').hide();
+					var fieldid = form_mail_to_input_fields[i].id;
+					var customfid = fieldid.substring(fieldid.lastIndexOf("[")+1,fieldid.lastIndexOf("]"));
+					jQuery("#field_row_"+customfid).parents('.multipage_form').show();
+                    var fieldmainname=document.getElementById("fieldname"+form_mail_to_input_fields[i].id).innerHTML;
+                    alert(fieldmainname+" is not a valid URL. Please make sure you have added http:// in your URL.");
+                    document.getElementById(form_mail_to_input_fields[i].id).style.borderColor='red';
+                    document.getElementById(form_mail_to_input_fields[i].id).focus();
+                    return false;
+                    }
+                    else
+                    {
+                    document.getElementById(form_mail_to_input_fields[i].id).style.borderColor='';
+                    }
+                }
+                }
+            }
+            }
+            }
+		}
+		
+		//Mail to custom field validation
+		var form_map_input_fields=document.getElementsByClassName("mapcustom"); 
+		if(form_map_input_fields.length>0)
+		{
+            for (i = 0; i < form_map_input_fields.length; i++)
+            {
+            //validation for input type link custom fields
+            if(form_map_input_fields[i].type!=null)
+            {
+            if(form_map_input_fields[i].type=="text")
+            { 
+                if(form_map_input_fields[i].className=='mapcustom required2')
+                {
+                if(document.getElementById(form_map_input_fields[i].id).value=='')
+                {
+				jQuery('.multipage_form').hide();
+				var fieldid = form_map_input_fields[i].id;
+				var customfid = fieldid.substring(fieldid.lastIndexOf("[")+1,fieldid.lastIndexOf("]"));
+				jQuery("#field_row_"+customfid).parents('.multipage_form').show();
+                var fieldmainname=document.getElementById("fieldname"+form_map_input_fields[i].id).innerHTML;
+                alert(fieldmainname+" is required!");
+                document.getElementById(form_map_input_fields[i].id).style.borderColor='red';
+                document.getElementById(form_map_input_fields[i].id).focus();
+                return false;
+                }
+                else{
+                    document.getElementById(form_map_input_fields[i].id).style.borderColor='';
+                }
+                }
+                else if(form_map_input_fields[i].className=='mapcustom')
+                {
+                    document.getElementById(form_map_input_fields[i].id).style.borderColor='';
+                }
+            }
+            }
+            }
+		}
+	        
+		//email validation script
+		var Useremail = document.adminForm["email"].value;
+		var url="index.php?option=com_dryfta&view=register&task=isEmailAlreadyExist&email="+encodeURIComponent(Useremail);
+		document.getElementById('page-loader').style.display='block';
+		var obj;
+		try
+		{
+			obj=new ActiveXobject("Microsoft.XMLHTTP");
+		}
+		catch(e)
+		{
+			try
+			{
+				obj=new XMLHttpRequest();
+			}
+			catch(e)
+			{ alert("your browser not support AJAX");}
+		}
+		//step2
+		obj.open("GET",url,true);
+		obj.send(null);
+		//step3
+		obj.onreadystatechange=function()
+		{
+			if(obj.readyState==4)
+			{
+			  var res1=obj.response;
+			  if(res1==1)
+			  {
+				var msg = "This email address already exists in our database. Please use a different email address!";
+				document.getElementById('page-loader').style.display='none';
+				alert (msg); 
+				document.adminForm["email"].focus();
+				document.adminForm["email"].style.borderColor='red';
+				return false;
+			  }
+			  else{
+					if(task=="save"){
+						
+						//code for captcha starts 
+												//code for captcha ends 
+						
+						//code to validate registration secret registration code
+						if(checkregcode == 1){
+						    document.getElementById('page-loader').style.display='block';
+							var rrc = document.adminForm["contact_registration_code"].value;
+							var url2="index.php?option=com_dryfta&view=register&task=checkContactRegCode&fid=registration-40&rrc="+encodeURIComponent(rrc);
+							var obj2;
+							try
+							{
+							obj2=new ActiveXobject("Microsoft.XMLHTTP");
+							}
+							catch(e)
+							{
+							try
+							{
+							obj2=new XMLHttpRequest();
+							}
+							catch(e)
+							{ alert("your browser not support AJAX"); }
+							}
+							//step2
+							obj2.open("GET",url2,true);
+							obj2.send(null);
+							//step3
+							obj2.onreadystatechange=function()
+							{
+							if(obj2.readyState==4)
+							{
+								var res2 = obj2.response;
+								if(res2 != 1)
+								{
+									document.getElementById('page-loader').style.display='none';
+									alert ("Invalid registration code"); 
+									jQuery('.multipage_form').hide();
+                        			jQuery("#contact_registration_code").parents('.multipage_form').show();
+                                    document.adminForm["contact_registration_code"].focus();
+                                    document.adminForm["contact_registration_code"].style.borderColor='red';
+                                    return false;
+								}
+								if(document.getElementById('create_pf_btn')){
+									document.getElementById('create_pf_btn').disabled = true;
+								}
+								if(document.getElementById('update_pf_btn')){
+									document.getElementById('update_pf_btn').disabled = true;
+								}
+								Joomla.submitform(task, document.getElementById('adminForm'));
+							}
+							}
+						}else{
+							if(document.getElementById('create_pf_btn')){
+								document.getElementById('create_pf_btn').disabled = true;
+							}
+							if(document.getElementById('update_pf_btn')){
+								document.getElementById('update_pf_btn').disabled = true;
+							}
+							Joomla.submitform(task, document.getElementById('adminForm'));
+						}
+					}
+					else
+					{
+					alert("Don't play with me!");
+					}
+				}
+			} 
+		}
+    }
+
+
+//confirm password change
+function checkOldPassword()
+{
+	if(document.getElementById('confirmoldpassword').value=="")
+	{
+		alert("Password can not be blank");
+	}
+	else
+	{
+		document.getElementById('page-loader').style.display="block"; 
+		var oldpass = document.getElementById('confirmoldpassword').value;
+		var uid = '0';
+		var url="index.php";
+		var params = "option=com_dryfta&view=register&task=checkOldPassword&uid="+uid+"&oldpass="+encodeURIComponent(oldpass)+"&285ad95458e858695bbaeacbf0a7deda=1";
+		var obj = new XMLHttpRequest();
+		try
+		{
+		obj=new ActiveXobject("Microsoft.XMLHTTP"); 
+		}
+		catch(e)
+		{
+		try
+		{
+		obj=new XMLHttpRequest();
+		}
+		catch(e)
+		{ 
+		alert("your browser not support AJAX");
+		}
+		}
+		//step2
+
+		//Send the proper header information along with the request
+		obj.open("POST",url,true);
+		obj.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		obj.setRequestHeader("Content-length", params.length);
+		obj.setRequestHeader("Connection", "close");
+
+		obj.send(params);
+
+		//step3
+		obj.onreadystatechange=function()
+		{ 
+		if(obj.readyState==4 && obj.status == 200)
+		{ 
+			var res = obj.responseText; 
+			document.getElementById('page-loader').style.display="none";
+			if(res == 0){
+			alert("You have entered the wrong password");
+			}else{ 
+			Joomla.submitform('save', document.getElementById('adminForm'));
+			}
+		}
+		}
+	}
+
+}//confirm password change ends
+
+function closePasswordPopUp(){
+	document.getElementById('confirmPasswordPopUp').style.display ='none';
+}
+
+
+function changeColor(e)
+{
+    e.style.borderColor='';
+    e.style.background='#ffffff';
+}
+
+function changeColorAndName(e,id)
+{
+    document.getElementById('file_name_custom['+id+']').innerHTML=e.value;
+    document.getElementById("file_box_custom["+id+"]").style.borderColor='';
+}
+
+function countLimitWords(fid,limit){
+    var text=document.getElementById('custom['+fid+']').value;
+    text = text.replace(/-/g,' ');
+    var totalWords = text.replace(/^\s+|\s+$/g,"").split(/\s+/).length;
+    document.getElementById('customtextarea_counter['+fid+']').innerHTML='<span style="float:left">Total Words: '+parseInt(totalWords)+'</span>';
+    if(totalWords > limit){
+    alert("You have reached the total allowed words limit. Words more than allowed limit will not be saved.");
+    }
+}
+
+function removeAttachment(uid,fid){
+    var conf = confirm("Do you want to remove this attachment?");
+    if(conf == false){ return false; }
+    
+    document.getElementById('page-loader').style.display="block";
+    var url="index.php";
+	var params = "option=com_dryfta&view=register&task=removeattachment&item_id="+uid+"&field_id="+fid+"&285ad95458e858695bbaeacbf0a7deda=1";
+	var obj = new XMLHttpRequest();
+	try
+	{
+	obj=new ActiveXobject("Microsoft.XMLHTTP"); 
+	}
+	catch(e)
+	{
+	try
+	{
+	obj=new XMLHttpRequest();
+	}
+	catch(e)
+	{ 
+	alert("your browser not support AJAX");
+	}
+	}
+	//step2
+
+	//Send the proper header information along with the request
+	obj.open("POST",url,true);
+	obj.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	obj.send(params);
+	//step3
+	obj.onreadystatechange=function()
+	{ 
+	if(obj.readyState==4 && obj.status == 200)
+	{
+		var res = obj.responseText;
+		if(res == 'error'){
+		    document.getElementById('page-loader').style.display="none";
+		    document.getElementById('system-message-container').innerHTML = '<dl id="system-message"><dd class="message error"> <ul><li>Error</li></ul></dd></dl>';
+		}else{
+		    alert(res);
+			location.reload();
+			
+		}
+	}
+	}
+}
+
+
+function resetBrowse(id)
+{
+    var conf = true;
+    if(document.getElementById(id).value != ''){
+        conf = confirm("Are you sure you want to remove the selected file?");
+    }
+    if(conf == true){
+        document.getElementById(id).value="";
+        document.getElementById('file_name_'+id).innerHTML="";
+    }
+}
+
+function changeStates(e,field_id)
+{
+	var country_id = document.getElementById(e.id).value;
+	document.getElementById('page-loader').style.display="block";
+	var url="index.php?option=com_dryfta&view=register&task=loadCountryStates&country_id="+country_id+"&field_id="+field_id;
+	var obj;
+	try
+	{
+		obj=new ActiveXobject("Microsoft.XMLHTTP"); 
+	}
+	catch(e)
+	{
+		try
+		{
+			obj=new XMLHttpRequest();
+		}
+		catch(e)
+		{ 
+		alert("your browser not support AJAX");
+		}
+	}
+	//step2
+	
+	obj.open("GET",url,true);
+	obj.send(null);
+	//step3
+	obj.onreadystatechange=function()
+	{
+		if(obj.readyState==4)
+		{
+		var res=obj.response;
+		document.getElementById('country_state'+field_id).innerHTML=res;
+		document.getElementById('page-loader').style.display="none";
+		e.style.borderColor='';
+		e.style.background='#ffffff';
+		}
+	}
+}
+
+function validateDateCustomField(e)
+{
+	var d = new Date(e.value);
+	if(isNaN(d.valueOf()))
+	{
+		alert("Please select date from the calendar!");
+		e.value="";
+		return false;
+	}
+}
+
+function onChangeGoogleMap(e){
+
+	if(e.value != ""){
+		document.getElementById("map_canvas"+e.id).style.height="160px";
+		document.getElementById("map_canvas"+e.id).style.paddingBottom="10px";
+		document.getElementById("map_canvas"+e.id).style.marginTop="20px";
+		document.getElementById("map_canvas"+e.id).style.paddingTop="10px";
+		e.style.borderColor='';
+		var address2=e.value;
+		geocoder = new google.maps.Geocoder();
+    	var latlng = new google.maps.LatLng(-34.397, 150.644);
+    	var mapOptions = {
+    	zoom: 15,
+    	center: latlng
+    	}
+    	map = new google.maps.Map(document.getElementById("map_canvas"+e.id), mapOptions);
+    
+    	geocoder.geocode( { 'address': address2}, function(results, status) {
+    	if (status == 'OK') {
+    	map.setCenter(results[0].geometry.location);
+    	var marker2 = new google.maps.Marker({
+    	map: map,
+    	position: results[0].geometry.location
+    	});
+    	} else {
+    	//alert('Geocode was not successful for the following reason: ' + status);
+    	}
+    	});
+	}
+	else
+	{
+		document.getElementById("map_canvas"+e.id).style.marginTop="0px";
+		document.getElementById("map_canvas"+e.id).style.paddingTop="0px";
+		document.getElementById("map_canvas"+e.id).style.height="18px";
+		document.getElementById("map_canvas"+e.id).style.paddingBottom="6px";
+		document.getElementById("map_canvas"+e.id).style.position="relative";
+		document.getElementById("map_canvas"+e.id).style.backgroundColor="";
+		document.getElementById("map_canvas"+e.id).style.overflow="hidden";
+		document.getElementById("map_canvas"+e.id).innerHTML="<div style='color:red'>Location not available!</div>";
+	}
+}
+
+function loadChildFields(parent_val,parent_id,reqenable)
+{
+    var par_val = parent_val.value;
+    par_val = encodeURIComponent(par_val);
+    document.getElementById('page-loader').style.display="block";
+    var url="index.php?option=com_dryfta&view=register&task=loadChildFields&form_id=4&parent_val="+par_val+"&parent_id="+parent_id+"&reqenable="+reqenable;
+    var obj;
+    try
+    {
+        obj=new ActiveXobject("Microsoft.XMLHTTP"); 
+    }
+    catch(e)
+    {
+        try
+        {
+            obj=new XMLHttpRequest();
+        }
+        catch(e)
+        { 
+        alert("your browser not support AJAX");
+        }
+    }
+    //step2
+    
+    obj.open("GET",url,true);
+    obj.send(null);
+    //step3
+    obj.onreadystatechange=function()
+    {
+        if(obj.readyState==4)
+        {
+        var res = JSON.parse(obj.responseText);
+        document.getElementById('childconditionalfields'+parent_id).style.display="block";
+        document.getElementById('childconditionalfields'+parent_id).innerHTML=res[0];
+        if(res[1].length > 0){
+		    for(var c=0; c < res[1].length; c++){
+		        calendarcustomdate(res[1][c]);
+		    }
+	    }
+        document.getElementById('page-loader').style.display="none";
+        }
+    }
+}
+
+function clearChildFields(parent_id)
+{   
+	document.getElementById('childconditionalfields'+parent_id).innerHTML='';
+	document.getElementById('childconditionalfields'+parent_id).style.display="none";
+}
+
+function loadCheckChildFields(parent_val,parent_id,ci,reqenable)
+{
+
+	if(parent_val.checked == true){
+		var par_val = parent_val.value;
+		par_val = encodeURIComponent(par_val);
+		document.getElementById('page-loader').style.display="block";
+		var url="index.php?option=com_dryfta&view=register&task=loadChildFields&form_id=4&parent_val="+par_val+"&parent_id="+parent_id+"&reqenable="+reqenable;
+		var obj;
+		try
+		{
+		obj=new ActiveXobject("Microsoft.XMLHTTP"); 
+		}
+		catch(e)
+		{
+		try
+		{
+		obj=new XMLHttpRequest();
+		}
+		catch(e)
+		{ 
+		alert("your browser not support AJAX");
+		}
+		}
+		//step2    
+		obj.open("GET",url,true);
+		obj.send(null);
+		//step3
+		obj.onreadystatechange=function()
+		{
+		if(obj.readyState==4)
+		{
+		    var res = JSON.parse(obj.responseText);
+		    document.getElementById('ch'+parent_id+'-'+ci).innerHTML = res[0];
+		    if(res[1].length > 0){
+    		    for(var c=0; c < res[1].length; c++){
+    		        calendarcustomdate(res[1][c]);
+    		    }
+		    }
+		    document.getElementById('page-loader').style.display="none";
+		}
+		}
+	}else{
+		document.getElementById('ch'+parent_id+'-'+ci).innerHTML='';
+	}
+}
+
+function clearCheckChildFields(parent_id,ci)
+{
+	document.getElementById('ch'+parent_id+'-'+ci).innerHTML='';
+}
+
+
+function pagebreakNext(page_id,required)
+{
+    var next_pageId = parseInt(page_id);
+    var current_pageId = next_pageId-1;
+	var validate = true;
+	if(required == 1){
+		validate = validateCurrentPage(current_pageId);
+	}
+	
+	if(validate == false){ return false; }else{
+		document.getElementById('dryfta_ragistration_form_page'+current_pageId).style.display="none";
+		document.getElementById('dryfta_ragistration_form_page'+next_pageId).style.display="block";
+		document.getElementById('dryfta_ragistration_form_page'+next_pageId).scrollIntoView();
+	}
+}
+
+function pagebreakPrev(page_id)
+{
+    var current_pageId = parseInt(page_id);
+    var prev_pageId = current_pageId-1;
+    document.getElementById('dryfta_ragistration_form_page'+current_pageId).style.display="none";
+    document.getElementById('dryfta_ragistration_form_page'+prev_pageId).style.display="block";
+	document.getElementById('dryfta_ragistration_form_page'+prev_pageId).scrollIntoView();
+}
+
+function loginWithLinkedIn()
+{
+	Joomla.submitform('loginWithLinkedIn', document.getElementById('adminForm'));
+}
+
+//script for suggestion dropdown organisations
+// AJAX call for autocomplete 
+function loadOrgSuggestions(e)
+{
+	var orgname = e.value;
+	changeColor(e);
+	if(orgname.length > 2){
+		var url="index.php";
+		var params = "option=com_dryfta&view=register&task=loadOrgSuggestions&keyword="+orgname+"&285ad95458e858695bbaeacbf0a7deda=1";
+		var obj = new XMLHttpRequest();
+		try
+		{
+		obj=new ActiveXobject("Microsoft.XMLHTTP"); 
+		}
+		catch(e)
+		{
+		try
+		{
+		obj=new XMLHttpRequest();
+		}
+		catch(e)
+		{ 
+		alert("your browser not support AJAX");
+		}
+		}
+		//step2
+
+		//Send the proper header information along with the request
+		obj.open("POST",url,true);
+		obj.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		obj.send(params);
+		//step3
+		obj.onreadystatechange=function()
+		{ 
+		if(obj.readyState==4 && obj.status == 200)
+		{
+			var res = obj.responseText;
+			document.getElementById('suggesstion-org').style.display = 'block';
+			document.getElementById('suggesstion-org').innerHTML = res;
+		}
+		}
+	}else{
+		document.getElementById('suggesstion-org').style.display = 'none';		
+	}
+}
+
+function selectOrganisation(val){
+	document.getElementById('custom[96]').value = val;
+	document.getElementById('suggesstion-org').style.display = 'none';
+}
+
+function validateCustom(e,fid,typeid){
+	var val = e.value;
+	if(val != ''){
+	if(typeid == 14){
+		var emailFilter = /^[a-zA-Z0-9\+._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,15}$/;
+		if(!emailFilter.test(val)){
+			document.getElementById('customvalidatemsg'+fid).innerHTML = "Email is not valid!";
+			document.getElementById('custom['+fid+']').style.borderColor = 'red';
+			//document.getElementById('custom['+fid+']').focus();
+			return;
+		}else{
+			document.getElementById('customvalidatemsg'+fid).innerHTML = '';
+		}
+	}else if(typeid == 12 || typeid == 13){
+		var urlFilter = /^(http[s]?:\/\/){0,1}(www\.){0,1}[a-zA-Z0-9\.\-]+\.[a-zA-Z]{2,5}[\.]{0,1}/;
+
+		if(!urlFilter.test(val)){
+			document.getElementById('customvalidatemsg'+fid).innerHTML = "is not a valid URL. Please make sure you have added http:// in your URL.";
+			document.getElementById('custom['+fid+']').style.borderColor = 'red';
+			//document.getElementById('custom['+fid+']').focus();
+			return;
+		}else{
+			document.getElementById('customvalidatemsg'+fid).innerHTML = '';
+		}
+	}else if(typeid == 6){
+		var file_allextensions = document.getElementById("file_custom["+fid+"]").value;
+		file_allextensions  = file_allextensions.split(',');
+		var file_confmemory = parseInt(document.getElementById("file_memory_custom["+fid+"]").value);
+		if(e.files[0]){
+		if(e.files[0].size<=file_confmemory*1000000)
+		{
+			var imgname = e.files[0].name;
+			var fileextension = imgname.split('.').pop();
+			var count=0;
+			for(g=0;g<file_allextensions.length;g++)
+			{
+			if(file_allextensions[g] == fileextension)
+			{
+			count=1;    
+			}
+			}
+			if(count==1)
+			{
+				document.getElementById("file_box_custom["+fid+"]").style.borderColor='';  
+			}
+			else
+			{
+				var fieldmainname = document.getElementById("fieldnamecustom["+fid+"]").innerHTML;
+				document.getElementById('file_name_custom['+fid+']').innerHTML = "<span style='color:red;'>"+fieldmainname + " must be "+file_allextensions+".</span>";
+				document.getElementById("file_box_custom["+fid+"]").style.borderColor='red';
+				document.getElementById("file_box_custom["+fid+"]").focus();
+				return;
+			}
+		}
+		else
+		{
+			var fieldmainname = document.getElementById("fieldnamecustom["+fid+"]").innerHTML;
+			document.getElementById('file_name_custom['+fid+']').innerHTML = "<span style='color:red;'>"+fieldmainname +" must be less than " +file_confmemory+" MB.</span>";
+			document.getElementById("file_box_custom["+fid+"]").style.borderColor='red';
+			document.getElementById("file_box_custom["+fid+"]").focus();
+			return;
+		}
+		}
+		changeColorAndName(e,fid);
+	}
+	}else if(typeid != 6){
+		document.getElementById('customvalidatemsg'+fid).innerHTML = '';
+	}
+}
+
+function validateEmail(e){
+	var emailFilter = /^[a-zA-Z0-9\+._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,15}$/;
+	if(!emailFilter.test(e.value)){
+		document.getElementById('emailvalidatemsg').innerHTML = "Email is not valid!";
+		document.getElementById('email').style.borderColor = 'red';
+		document.getElementById('email').focus();
+		return;
+	}else{
+		document.getElementById('emailvalidatemsg').innerHTML = '';
+	}
+}
+
+function validateCurrentPage(pageid){
+	var emailFilter = /^[a-zA-Z0-9\+._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,15}$/;
+	var phoneNumberPattern =/^(?=[^A-Za-z]+$).*[0-9].*$/ ;
+	var nameRegex = /^[a-zA-Z\u3300-\u9fff\uf900-\ufaff\-_ ’'‘ÆÐƎƏƐƔĲŊŒẞÞǷȜæðǝəɛɣĳŋœĸſßþƿȝĄƁÇĐƊĘĦĮƘŁØƠŞȘŢȚŦŲƯY̨Ƴąɓçđɗęħįƙłøơşșţțŧųưy̨ƴÁÀÂÄǍĂĀÃÅǺĄÆǼǢƁĆĊĈČÇĎḌĐƊÐÉÈĖÊËĚĔĒĘẸƎƏƐĠĜǦĞĢƔáàâäǎăāãåǻąæǽǣɓćċĉčçďḍđɗðéèėêëěĕēęẹǝəɛġĝǧğģɣĤḤĦIÍÌİÎÏǏĬĪĨĮỊĲĴĶƘĹĻŁĽĿʼNŃN̈ŇÑŅŊÓÒÔÖǑŎŌÕŐỌØǾƠŒĥḥħıíìiîïǐĭīĩįịĳĵķƙĸĺļłľŀŉńn̈ňñņŋóòôöǒŏōõőọøǿơœŔŘŖŚŜŠŞȘṢẞŤŢṬŦÞÚÙÛÜǓŬŪŨŰŮŲỤƯẂẀŴẄǷÝỲŶŸȲỸƳŹŻŽẒŕřŗſśŝšşșṣßťţṭŧþúùûüǔŭūũűůųụưẃẁŵẅƿýỳŷÿȳỹƴźżžẓ]+$/;
+	var customRegex = /^[a-zA-Z0-9\u3300-\u9fff\uf900-\ufaff\-_ ’'!,‘ÆÐƎƏƐƔĲŊŒẞÞǷȜæðǝəɛɣĳŋœĸſßþƿȝĄƁÇĐƊĘĦĮƘŁØƠŞȘŢȚŦŲƯY̨Ƴąɓçđɗęħįƙłøơşșţțŧųưy̨ƴÁÀÂÄǍĂĀÃÅǺĄÆǼǢƁĆĊĈČÇĎḌĐƊÐÉÈĖÊËĚĔĒĘẸƎƏƐĠĜǦĞĢƔáàâäǎăāãåǻąæǽǣɓćċĉčçďḍđɗðéèėêëěĕēęẹǝəɛġĝǧğģɣĤḤĦIÍÌİÎÏǏĬĪĨĮỊĲĴĶƘĹĻŁĽĿʼNŃN̈ŇÑŅŊÓÒÔÖǑŎŌÕŐỌØǾƠŒĥḥħıíìiîïǐĭīĩįịĳĵķƙĸĺļłľŀŉńn̈ňñņŋóòôöǒŏōõőọøǿơœŔŘŖŚŜŠŞȘṢẞŤŢṬŦÞÚÙÛÜǓŬŪŨŰŮŲỤƯẂẀŴẄǷÝỲŶŸȲỸƳŹŻŽẒŕřŗſśŝšşșṣßťţṭŧþúùûüǔŭūũűůųụưẃẁŵẅƿýỳŷÿȳỹƴźżžẓ&,.]+$/;
+	var usernameRegexonlyUserName = /^[a-zA-Z0-9._-]+$/;
+	var usernameRegex = /^[a-zA-Z0-9._-]+$/; 
+	
+	if(pageid == 0){
+
+				
+	}
+	
+	//validate fixed fields
+	var custom_fixed_fields = document.getElementById('dryfta_ragistration_form_page'+pageid).getElementsByClassName("custom_fixed_fields");
+	if(custom_fixed_fields.length > 0)
+	{
+		for (i = 0; i < custom_fixed_fields.length; i++)
+		{			
+			if(custom_fixed_fields[i].type == "text" && custom_fixed_fields[i].id == 'first_name')
+			{
+				if(document.adminForm["first_name"].value== '')
+				{
+					var msg = "First name is required!";
+					alert (msg); 
+					document.adminForm["first_name"].focus();
+					document.adminForm["first_name"].style.borderColor='red';
+					return false;
+				}
+			}
+			
+			if(custom_fixed_fields[i].type == "text" && custom_fixed_fields[i].id == 'last_name')
+			{
+				if(document.adminForm["last_name"].value== '')
+				{
+					var msg = "Last name is required!";
+					alert (msg); 
+					document.adminForm["last_name"].focus();
+					document.adminForm["last_name"].style.borderColor='red';
+					return false;
+				}
+			}
+			
+			if(custom_fixed_fields[i].type == "text" && custom_fixed_fields[i].id == 'email')
+			{
+				if(document.adminForm["email"].value== "")  
+				{
+					alert("Please enter Your email address");
+					document.adminForm["email"].focus();
+					document.adminForm["email"].style.borderColor='red';
+					return false;
+				}
+				
+				if(document.adminForm["email"].value != "" && !emailFilter.test(document.adminForm["email"].value))
+				{
+				alert("Email is not valid!");
+				document.adminForm["email"].focus();
+				document.adminForm["email"].style.borderColor='red';
+				return false;
+				}
+			}
+			
+			//validation for topics
+            if(custom_fixed_fields[i].type == "checkbox")
+            {
+                            }
+			
+			if(custom_fixed_fields[i].type == "password")
+			{
+								if(document.adminForm["password"].value=='' || document.adminForm["password"].value==null)
+				{
+					var msg = "Password is blank!";
+					alert (msg); 
+					document.adminForm["password"].focus();
+					document.adminForm["password"].style.borderColor='red';
+					return false;
+				}
+				
+				if(document.adminForm["password"].value != document.adminForm["repassword"].value)
+				{
+					var msg = "Passwords do not match!";
+					alert (msg); 
+					document.adminForm["password"].focus();
+					document.adminForm["repassword"].style.borderColor='red';
+					return false;
+				}
+				var str = document.adminForm["password"].value;
+				var spc = str.indexOf(' ');
+				var strtag = str.indexOf('<');
+				var endtag = str.indexOf('>');
+				if(spc!='-1' || strtag!='-1' || endtag!='-1'){
+					var msg = "Spaces and tags are not allowed in password!";
+					alert (msg); 
+					document.adminForm["password"].focus();
+					document.adminForm["password"].style.borderColor='red';
+					return false;
+				}
+							}
+		}
+	}
+	
+	
+        //browse field check 
+        var form_file_fields= document.getElementById('dryfta_ragistration_form_page'+pageid).getElementsByClassName("browser_file_field");
+        //validation for input type custom fields
+        if(form_file_fields.length>0)
+        {
+            for (i = 0; i < form_file_fields.length; i++)
+            {   
+                if(form_file_fields[i].type=="file" && form_file_fields[i].id != 'blogpic')
+                {
+                    var file_allextensions = document.getElementById("file_"+form_file_fields[i].id).value;
+                    file_allextensions = file_allextensions.split(',');
+                    var file_confmemory=parseInt(document.getElementById("file_memory_"+form_file_fields[i].id).value);
+                    var filename = document.getElementById(form_file_fields[i].id);
+                    if(filename.files[0]){
+                    if(filename.files[0].size<=file_confmemory*1000000)
+                    {
+                        imgname = filename.files[0].name;
+                        var fileextension=imgname.split('.').pop();
+                        var count=0;
+                        for(g=0;g<file_allextensions.length;g++)
+                        {
+                        if(file_allextensions[g]==fileextension)
+                        {
+                        count=1;    
+                        }
+                        }
+                        if(count==1)
+                        {
+                            document.getElementById("file_box_"+form_file_fields[i].id).style.borderColor='';  
+                        }
+                        else
+                        {
+                            var fieldmainname = document.getElementById("fieldname"+form_file_fields[i].id).innerHTML;
+                            alert(fieldmainname+" must be "+file_allextensions);
+                            document.getElementById("file_box_"+form_file_fields[i].id).style.borderColor='red';
+                            document.getElementById("file_box_"+form_file_fields[i].id).focus();
+                            return false;
+                        }
+                    }
+                    else
+                    {
+                        var fieldmainname=document.getElementById("fieldname"+form_file_fields[i].id).innerHTML;
+                        alert(fieldmainname+" must be less than "+file_confmemory+"MB");
+                        document.getElementById("file_box_"+form_file_fields[i].id).style.borderColor='red';
+                        document.getElementById("file_box_"+form_file_fields[i].id).focus();
+                        return false;
+                    }
+                    }
+                }
+            }
+        }
+        //browse field check
+
+        var form_input_fields = document.getElementById('dryfta_ragistration_form_page'+pageid).getElementsByClassName("required");
+        //validation for input type custom fields
+        if(form_input_fields.length>0)
+        { 	
+            for (i = 0; i < form_input_fields.length; i++)
+            { 
+            //validation for input type text custom fields
+            if(form_input_fields[i].type!=null)
+            {	
+            if(form_input_fields[i].type == "text")
+            {  	
+				var customRegex1 = customRegex;
+                if(form_input_fields[i].className=='required' || form_input_fields[i].className=='required dryfta_register_dateBox') 
+                {
+                if(document.getElementById(form_input_fields[i].id).value=='')
+                {
+                var fieldmainname=document.getElementById("fieldname"+form_input_fields[i].id).innerHTML;
+                alert(fieldmainname+" is required!");
+                document.getElementById(form_input_fields[i].id).style.borderColor='red';
+                document.getElementById(form_input_fields[i].id).focus();
+                return false;
+                }
+                else
+                {   
+					if(form_input_fields[i].id == 'custom[91]'){ customRegex1 = phoneNumberPattern; }
+					if(form_input_fields[i].id == 'custom[91]' && !customRegex1.test(document.getElementById(form_input_fields[i].id).value))
+					{
+						var fieldmainname = document.getElementById("fieldname"+form_input_fields[i].id).innerHTML;
+						if(form_input_fields[i].id == 'custom[91]'){
+							alert(fieldmainname+"  only accepts numerals.");
+						}else{
+						 alert(fieldmainname+" Only alpha/numeric characters allowed."); 
+						}
+					document.getElementById(form_input_fields[i].id).style.borderColor='red';
+					document.getElementById(form_input_fields[i].id).focus();
+					return false;
+					}else{
+					document.getElementById(form_input_fields[i].id).style.borderColor='';
+					}               
+                }
+                }
+                else
+                {
+				}
+            }
+            }
+            //validation for input type checkbox custom fields
+            if(form_input_fields[i].type == "checkbox")
+            {	
+                if(form_input_fields[i].className=='required')
+                {
+					var k,chks = document.getElementsByName(form_input_fields[i].name); 
+					
+					var flag=0;
+					for (k = 0; k < chks.length; k++){
+						if (chks[k].checked){
+						flag=1;
+						}
+					}
+					if(flag==0)
+					{
+						var fieldmainname = document.getElementById("fieldname"+form_input_fields[i].name).innerHTML;
+						alert(fieldmainname+" is required!");
+						return false;
+					}
+					else
+					{
+						
+					}
+                }
+            }
+            //validation for input type radio custom fields
+            if(form_input_fields[i].type=="radio")
+            {
+                if(form_input_fields[i].className=='required')
+                {
+                var k,chks = document.getElementsByName(form_input_fields[i].name); 
+                
+                var flag=0;
+                for (k = 0; k < chks.length; k++){
+                    if (chks[k].checked){
+                    flag=1;
+                    }
+                        }
+                if(flag==0)
+                {
+                var fieldmainname=document.getElementById("fieldname"+form_input_fields[i].name).innerHTML;
+                alert(fieldmainname+" is required!");
+                return false;
+                }
+                else
+                {
+                
+                }
+                }
+            } 
+            if(form_input_fields[i].type=="select-one" || form_input_fields[i].type=="select-multiple")
+            {
+            if(form_input_fields[i].className.split(' ')[0]=='required')
+                {
+                
+                if(document.getElementById(form_input_fields[i].id).value=='')
+                {
+                var fieldmainname=document.getElementById("fieldname"+form_input_fields[i].id).innerHTML;
+                alert(fieldmainname+" is required!");
+                document.getElementById(form_input_fields[i].id).style.borderColor='red';
+                document.getElementById(form_input_fields[i].id).focus();
+                return false;
+                }
+                else
+                {
+                document.getElementById(form_input_fields[i].id).style.borderColor='';  
+                }
+                }
+                
+            }
+            
+            if(form_input_fields[i].type=="file")
+            {
+            if(form_input_fields[i].className.split(' ')[0]=='required')
+                {
+                if(document.getElementById(form_input_fields[i].id).value=='')
+                {
+                var fieldmainname=document.getElementById("fieldname"+form_input_fields[i].id).innerHTML;
+                alert(fieldmainname+" is required!");
+                document.getElementById("file_box_"+form_input_fields[i].id).style.borderColor='red';
+                document.getElementById("file_box_"+form_input_fields[i].id).focus();
+                return false;
+                }
+                else
+                {
+                    var file_allextensions=document.getElementById("file_"+form_input_fields[i].id).value;
+                    file_allextensions=file_allextensions.split(',');
+                    var file_confmemory=parseInt(document.getElementById("file_memory_"+form_input_fields[i].id).value);
+                    var filename=document.getElementById(form_input_fields[i].id);
+                    if(filename.files[0].size<=file_confmemory*1000000)
+                    {
+                    imgname=filename.files[0].name;
+                    var fileextension=imgname.split('.').pop();
+                    var count=0;
+                    for(g=0;g<file_allextensions.length;g++)
+                    {
+                    if(file_allextensions[g]==fileextension)
+                    {
+                    count=1;    
+                    }
+                    }
+                    if(count==1)
+                    {
+                    document.getElementById("file_box_"+form_input_fields[i].id).style.borderColor='';  
+                    }
+                    else
+                    {
+					var fieldmainname=document.getElementById("fieldname"+form_input_fields[i].id).innerHTML;
+					alert(fieldmainname+" must be "+file_allextensions);
+					document.getElementById("file_box_"+form_input_fields[i].id).style.borderColor='red';
+					document.getElementById("file_box_"+form_input_fields[i].id).focus();
+					return false;
+                    }
+                    }
+                    else
+                    {
+                    var fieldmainname=document.getElementById("fieldname"+form_input_fields[i].id).innerHTML;
+					alert(fieldmainname+" must be less than "+file_confmemory+"MB");
+					document.getElementById("file_box_"+form_input_fields[i].id).style.borderColor='red';
+					document.getElementById("file_box_"+form_input_fields[i].id).focus();
+					return false;   
+                    }
+                        
+                }
+                }
+                
+            }
+            
+            if(form_input_fields[i].type=="textarea")
+            {
+                if(form_input_fields[i].className=='required')
+                {
+                if(document.getElementById(form_input_fields[i].id).value=='')
+                {
+                var fieldmainname=document.getElementById("fieldname"+form_input_fields[i].id).innerHTML;
+                alert(fieldmainname+" is required!");
+                document.getElementById(form_input_fields[i].id).style.borderColor='red';
+                document.getElementById(form_input_fields[i].id).focus();
+                return false;
+                }
+                else
+                {
+                document.getElementById(form_input_fields[i].id).style.borderColor='';  
+                }
+                }
+            }       
+            }
+    
+        }
+        
+		//External custom fields validation 
+		var form_link_input_fields = document.getElementById('dryfta_ragistration_form_page'+pageid).getElementsByClassName("externalcustom");   
+		if(form_link_input_fields.length>0)
+		{
+            for (i = 0; i < form_link_input_fields.length; i++)
+            {
+            //validation for input type link custom fields
+            if(form_link_input_fields[i].type!=null )
+            {
+            if(form_link_input_fields[i].type=="text")
+            { 
+                if(form_link_input_fields[i].className=='externalcustom required2')
+                {
+                if(document.getElementById(form_link_input_fields[i].id).value=='')
+                {
+                var fieldmainname=document.getElementById("fieldname"+form_link_input_fields[i].id).innerHTML;
+                alert(fieldmainname+" is required!");
+                document.getElementById(form_link_input_fields[i].id).style.borderColor='red';
+                document.getElementById(form_link_input_fields[i].id).focus();
+                return false;
+                }
+                else{
+                var link=document.getElementById(form_link_input_fields[i].id).value;
+                var urlregex = /^(http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?$/;
+
+                if(!urlregex.test(link))
+                    {
+                    var fieldmainname=document.getElementById("fieldname"+form_link_input_fields[i].id).innerHTML;
+                    alert(fieldmainname+" is not a valid URL. Please make sure you have added http:// in your URL.");
+                    document.getElementById(form_link_input_fields[i].id).style.borderColor='red';
+                    document.getElementById(form_link_input_fields[i].id).focus();
+                    return false;
+                    }
+                    else
+                    {
+                    document.getElementById(form_link_input_fields[i].id).style.borderColor='';
+                    }
+                }
+                }
+                else if(form_link_input_fields[i].className=='externalcustom')
+                {
+                var link=document.getElementById(form_link_input_fields[i].id).value;
+                var urlregex = /^(http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?$/;
+                if(link!=""){
+                if(!urlregex.test(link))
+                    {
+                    var fieldmainname=document.getElementById("fieldname"+form_link_input_fields[i].id).innerHTML;
+                    alert(fieldmainname+" is not a valid URL. Please make sure you have added http:// in your URL.");
+                    document.getElementById(form_link_input_fields[i].id).style.borderColor='red';
+                    document.getElementById(form_link_input_fields[i].id).focus();
+                    return false;
+                    }
+                    else
+                    {
+                    document.getElementById(form_link_input_fields[i].id).style.borderColor='';
+                    }
+                }
+                }
+            }
+            }
+            }
+		}
+		
+        //Mail to custom field validation
+		var form_mail_to_input_fields = document.getElementById('dryfta_ragistration_form_page'+pageid).getElementsByClassName("mailtocustom");  
+		if(form_mail_to_input_fields.length>0)
+		{
+            for (i = 0; i < form_mail_to_input_fields.length; i++)
+            {
+            //validation for input type link custom fields
+            if(form_mail_to_input_fields[i].type!=null)
+            {
+            if(form_mail_to_input_fields[i].type=="text")
+            { 
+                if(form_mail_to_input_fields[i].className=='mailtocustom required2')
+                {
+                if(document.getElementById(form_mail_to_input_fields[i].id).value=='')
+                {
+                var fieldmainname=document.getElementById("fieldname"+form_mail_to_input_fields[i].id).innerHTML;
+                alert(fieldmainname+" is required!");
+                document.getElementById(form_mail_to_input_fields[i].id).style.borderColor='red';
+                document.getElementById(form_mail_to_input_fields[i].id).focus();
+                return false;
+                }
+                else{
+                var mailto=document.getElementById(form_mail_to_input_fields[i].id).value;
+                if(!emailFilter.test(mailto))
+                    {
+                    var fieldmainname=document.getElementById("fieldname"+form_mail_to_input_fields[i].id).innerHTML;
+                    alert(fieldmainname+" not a valid email address.");
+                    document.getElementById(form_mail_to_input_fields[i].id).style.borderColor='red';
+                    document.getElementById(form_mail_to_input_fields[i].id).focus();
+                    return false;
+                    }
+                    else
+                    {
+                    document.getElementById(form_mail_to_input_fields[i].id).style.borderColor='';
+                    }
+                }
+                }
+                else if(form_mail_to_input_fields[i].className=='mailtocustom')
+                {
+                var mailto=document.getElementById(form_mail_to_input_fields[i].id).value;
+                if(mailto!=""){
+                if(!emailFilter.test(mailto))
+                    {
+                    var fieldmainname=document.getElementById("fieldname"+form_mail_to_input_fields[i].id).innerHTML;
+                    alert(fieldmainname+" is not a valid URL. Please make sure you have added http:// in your URL.");
+                    document.getElementById(form_mail_to_input_fields[i].id).style.borderColor='red';
+                    document.getElementById(form_mail_to_input_fields[i].id).focus();
+                    return false;
+                    }
+                    else
+                    {
+                    document.getElementById(form_mail_to_input_fields[i].id).style.borderColor='';
+                    }
+                }
+                }
+            }
+            }
+            }
+		}
+		
+		//Mail to custom field validation
+		var form_map_input_fields = document.getElementById('dryfta_ragistration_form_page'+pageid).getElementsByClassName("mapcustom"); 
+		if(form_map_input_fields.length>0)
+		{
+            for (i = 0; i < form_map_input_fields.length; i++)
+            {
+            //validation for input type link custom fields
+            if(form_map_input_fields[i].type!=null)
+            {
+            if(form_map_input_fields[i].type=="text")
+            { 
+                if(form_map_input_fields[i].className=='mapcustom required2')
+                {
+                if(document.getElementById(form_map_input_fields[i].id).value=='')
+                {
+                var fieldmainname=document.getElementById("fieldname"+form_map_input_fields[i].id).innerHTML;
+                alert(fieldmainname+" is required!");
+                document.getElementById(form_map_input_fields[i].id).style.borderColor='red';
+                document.getElementById(form_map_input_fields[i].id).focus();
+                return false;
+                }
+                else{
+                    document.getElementById(form_map_input_fields[i].id).style.borderColor='';
+                }
+                }
+                else if(form_map_input_fields[i].className=='mapcustom')
+                {
+                    document.getElementById(form_map_input_fields[i].id).style.borderColor='';
+                }
+            }
+            }
+            }
+		}
+	}
+
+
+function calendarcustomdate(id){
+	Calendar.setup({
+    // Id of the input field
+    inputField: 'custom['+id+']',
+    // Format of the input field
+    ifFormat: '%Y-%m-%d',
+    // Trigger for the calendar (button ID)
+    button: 'custom['+id+']_img',
+    // Alignment (defaults to "Bl")
+    align: 'Tl',
+    singleClick: true,
+    firstDay: '0'
+    });
+}
+</script>
+
+<noscript><div class="js_disable_msg"><span style='color:red;'>Javascript is disabled on your browser. You have to enable javascript for better user experience.</span></div></noscript>
+
+<div id="page-loader" >
+<div class="loader">
+<div class="inner one"></div>
+<div class="inner two"></div>
+<div class="inner three"></div>
+</div>
+</div>
+
+
+<div id="Dryfta_ragistration" class="dryfta-reg-form-4">
+
+<form action="attendees-authors-registration.html" method="post" name="adminForm" id="adminForm" enctype="multipart/form-data">
+    <div class="dryfta_ragistration_form">
+
+    <fieldset class="multipage_form" id="dryfta_ragistration_form_page0">
+        <h1>Registration<span class="dryfta_sub_title dryfta_user_instruction"><p><span style="font-size: 14pt;">After you registered, you can pay for your registration and housing fees or submit an abstract, all through your dashboard.</span></p></span>		</h1>
+        
+		<div class="clr"></div>
+		
+				
+        <div class="dryfta-table">
+        <!-- Fixed Fields -->
+		<div class="dryfta-table-row" id="field_row_92">
+                    <div class="dryfta-table-cell" style="display:block;"><span id="fieldnamecustom[92]">Prefix</span></div>
+                    <div class="dryfta-table-cell ftype4 field92"><select  class=" dryfta_select_box" name="custom[92]" id="custom[92]"  title="Prefix">
+			<option value="" title="Select Prefix">Select Prefix</option><option value="Mr."  title="Mr.">Mr.</option><option value="Mrs."  title="Mrs.">Mrs.</option><option value="Ms."  title="Ms.">Ms.</option><option value="Dr."  title="Dr.">Dr.</option><option value="Prof."  title="Prof.">Prof.</option><option value="Rev."  title="Rev.">Rev.</option><option value="Lady"  title="Lady">Lady</option><option value="Sir"  title="Sir">Sir</option><option value="The Hon."  title="The Hon.">The Hon.</option><option value="Brgdr."  title="Brgdr.">Brgdr.</option><option value="Cmdr."  title="Cmdr.">Cmdr.</option><option value="Major"  title="Major">Major</option><option value="Capt."  title="Capt.">Capt.</option><option value="Col."  title="Col.">Col.</option><option value="Lt.-Col."  title="Lt.-Col.">Lt.-Col.</option><option value="Judge"  title="Judge">Judge</option><option value="Dame"  title="Dame">Dame</option><option value="Assoc Prof."  title="Assoc Prof.">Assoc Prof.</option><option value="Director"  title="Director">Director</option><option value="Exec Director"  title="Exec Director">Exec Director</option><option value="Manager"  title="Manager">Manager</option><option value="Exec Manager"  title="Exec Manager">Exec Manager</option><option value="Instructer"  title="Instructer">Instructer</option><option value="Sr. Lecturer"  title="Sr. Lecturer">Sr. Lecturer</option><option value="Lecturer"  title="Lecturer">Lecturer</option><option value="PhD"  title="PhD">PhD</option><option value="Reader"  title="Reader">Reader</option></select></div><div id="childconditionalfields92" class="custom_field_A"  ></div></div><div class="dryfta-table-row" id="field_row_1"><div class="dryfta-table-cell" style="display:block;"><span id="fieldnamecustom[1]">First Name</span><span align="middle" style="color:red">*</span></div><div class="dryfta-table-cell ftype1 field1"><input type="text" size="45" onkeyup="changeColor(this);" name="first_name" id="first_name" value="" class="custom_fixed_fields" maxlength="255" autocomplete="off" title="First Name"/></div></div><div class="dryfta-table-row" id="field_row_2"><div class="dryfta-table-cell" style="display:block;"><span id="fieldnamecustom[2]">Last Name</span><span align="middle" style="color:red">*</span></div><div class="dryfta-table-cell ftype1 field2"><input type="text" size="45" onkeyup="changeColor(this);" name="last_name" id="last_name" value="" class="custom_fixed_fields" maxlength="255" autocomplete="off" title="Last Name"/></div></div><div class="dryfta-table-row" id="field_row_3">
+			<div class="dryfta-table-cell" style="display:block;">
+			<span id="fieldnamecustom[3]">Email</span><span align="middle" style="color:red">*</span></div> 
+			<div class="dryfta-table-cell ftype14 field3"><input type="text" onSelect="changeColor(this);" onkeyup="changeColor(this);" name="email" id="email" value="" size="45" maxlength="250" autocomplete="off" onblur="validateEmail(this);" title="Email" class="custom_fixed_fields"/>
+				<span style="color:red;font-size:11px;" id="emailvalidatemsg"></span></div></div><div class="group_sec_1">
+					<div class="dryfta-inline-block">
+					<div class="dryfta-table-row">
+					<div class="dryfta-table-cell">Password<span align="middle" style="color:red">*</span><span align="top" class="hasTip" title="Please enter Your Password. It must be at least 8 characters long."><i style="font-size:15px;" class="fa fa-exclamation-circle"></i></span></div>
+					<div class="dryfta-table-cell"> <input size="23" type="password" onkeyup="changeColor(this);" id="password" name="password" title="Password" class="custom_fixed_fields" /></div>
+					</div></div>
+					<div class="dryfta-inline-block">
+					<div class="dryfta-table-row">
+					<div class="dryfta-table-cell">Confirm Password<span align="middle"  style="color:red">*</span></div>
+					<div class="dryfta-table-cell" style="padding-right:0px;"><input size="23" type="password" onkeyup="changeColor(this);" name="repassword" id="repassword" title="Confirm Password" class="custom_fixed_fields" /></div>
+					</div>
+					</div>
+					</div><div class="dryfta-table-row" id="field_row_96"><div class="dryfta-table-cell" style="display:block;"><span id="fieldnamecustom[96]">Company/Organization</span></div><div class="dryfta-table-cell ftype1 field96"><input type="text" size="45" onkeyup="loadOrgSuggestions(this);" name="custom[96]" id="custom[96]" value="" class="" maxlength="255" autocomplete="off" title="Company/Organization" /></div><div id="suggesstion-org"></div></div><div class="dryfta-table-row" id="field_row_98"><div class="dryfta-table-cell" style="display:block;"><span id="fieldnamecustom[98]">Role</span></div><div class="dryfta-table-cell ftype1 field98"><input type="text" size="45" onkeyup="changeColor(this);" name="custom[98]" id="custom[98]" value="" class="" maxlength="255" autocomplete="off" title="Role"/></div></div><div class="dryfta-table-row" id="field_row_91"><div class="dryfta-table-cell" style="display:block;"><span id="fieldnamecustom[91]">Phone</span><span align="middle" class="hasTip" title="Please include country code without '+' sign."><i style="font-size:15px;" class="fa fa-exclamation-circle"></i></span></div><div class="dryfta-table-cell ftype1 field91"><input type="text" size="45" onkeyup="changeColor(this);" name="custom[91]" id="custom[91]" value="" class="" maxlength="255" autocomplete="off" title="Phone"/></div></div><div class="dryfta-table-row" id="field_row_95">
+                    <div class="dryfta-table-cell" style="display:block;"><span id="fieldnamecustom[95][]">I'm interested in</span><div class="dryfta-field-descr-section">Choose your interests so attendees with similar interests can be recommended to you.</div></div><div class="dryfta-table-cell checkbox ftype2 field95"><input class="" style="float:none;" type="checkbox" name="custom[95][]" id="custom[1195][]" value="11" onclick="clearCheckChildFields(95,0);" /><label for="custom[1195][]">Information Theory</label><br/><div id="ch95-0"></div><input class="" style="float:none;" type="checkbox" name="custom[95][]" id="custom[1295][]" value="12" onclick="clearCheckChildFields(95,1);" /><label for="custom[1295][]">Artificial Intelligence</label><br/><div id="ch95-1"></div><input class="" style="float:none;" type="checkbox" name="custom[95][]" id="custom[1395][]" value="13" onclick="clearCheckChildFields(95,2);" /><label for="custom[1395][]">Complexity</label><br/><div id="ch95-2"></div><input class="" style="float:none;" type="checkbox" name="custom[95][]" id="custom[1495][]" value="14" onclick="clearCheckChildFields(95,3);" /><label for="custom[1495][]">Philosophy of Information</label><br/><div id="ch95-3"></div><input class="" style="float:none;" type="checkbox" name="custom[95][]" id="custom[7995][]" value="79" onclick="clearCheckChildFields(95,4);" /><label for="custom[7995][]">Other</label><br/><div id="ch95-4"></div></div></div><input type="hidden" name="checkbox_fieldids" value="95" /><input type='hidden' name='createdon' value='2019-06-25'/><input type='hidden' name='ip' value='67.170.237.247'/>	</div>
+
+	<!-- code for captcha starts  -->
+	
+	<div class="dryfta_register_now_button">
+		<span style="display:none;"><input type="text" title="" name="hidden_date" id="hidden_date" value="" size="10" /><img src="../media/system/images/calendar.png" alt="Calendar" class="calendar" id="hidden_date_img" /></span><input type="hidden" name="285ad95458e858695bbaeacbf0a7deda" value="1" />					<input id="create_pf_btn" type="button" class="dryfta_register_now" value="Create Account" onclick="validateFirst('save');" title="Create Account"/>
+			<input type="hidden" name="user_type" value="4" />
+					<input type="hidden" name="view" value="register" />
+		<input type="hidden" name="event_id" value="1" />
+		<input type="hidden" name="user_id" value="0" />
+		<input type="hidden" name="task" id="task" value="" />
+	</div>
+</fieldset>
+</div>
+</form>
+
+</div>
+
+<div class="dryfta_trans_popupB" id="confirmPasswordPopUp" style="display:none;">
+<div class="dryfta-confirmpass_box" style="height: 290px;"> 
+	<div class="close_confirmpass_button"><div style="margin-right:0px;" class="d_settings_addmenu"> 
+	<span class="close_confirmpass"><a style="margin-right:0px" onclick="closePasswordPopUp();" href="javascript:void(0)"> <i class="fa fa-close"></i> Close</a></span></div></div>
+	<div class="dryfta_flieldset_box"> 
+	<h5>Please enter your current password.<br><span style='color:red; font-size:11px'>If you are changing your password for the first time, please check your email where you should have had received the temporary password. If you did not receive the email with temporary password, please close this pop up, log out from the dashboard and click on Forgot password link on the login page to receive a temporary password. That temporary password would then become your current password which you can use to log in and change your password.</span> </h5>
+	<div class="dryfta_form_row"> Current Password	<input type="password" name="confirmoldpassword" id="confirmoldpassword"/></div>
+	<div class="dryfta_form_row"><input type="button" name="confirmsubmit" id="confirmsubmit" onclick="checkOldPassword();" value="Submit" /></div>
+	</div>
+</div>
+</div>
+					  </div></div>
+					  </div></div>
+<footer class="footer">
+<div class="container" style="padding-top:0px;padding-bottom:0px;">
+<div class="footer_copyLeft"> 
+		<div class="moduletable">
+					
+<script type="text/javascript">
+function gotoContentSection(){
+	document.getElementById('dryftacom_content_section').focus();
+	return false;
+}
+</script>
+
+<div class="dry-logo">
+		<div class="dayfta_logo_img"><a href="../index.html"><img src="https://dryfta-assets.s3-accelerate.amazonaws.com/assets/is4si2019/images/1552162878smallworldorangenetworki.png" alt="Site Logo Image" title="Site Logo Image"/></a>
+	<input type="button" title="Go to content section" value="Go to content section" onclick="gotoContentSection();" style="opacity:0;height: 1px;float: right;width:1px;padding:0;margin:0;"/>
+	</div>
+		<div class="dryfta_logo_title"><a href="../index.html">IS4SI 2019</a>
+	
+	</div>
+</div>
+		</div>
+	
+</div>
+<div class="footer_right_social_R">
+
+
+
+
+</div>
+<div class="clr"></div>
+<div class="footer_copyright">
+		<div class="moduletablepowered_by">
+					
+
+<div class="custompowered_by"  >
+	<p><img style="border-radius: 3px; height: 14px; padding: 12px 0 11px; vertical-align: middle;" alt="Dryfta Logo" src="https://dryfta.com/powered-by-dryfta.png"><a target="_blank" href="https://dryfta.com/?utm_source=poweredby&utm_medium=website&utm_campaign=clientlist"> Dryfta event tools for academia & non-profits </a></p></div>
+		</div>
+	
+</div>
+<div class="clr"></div>
+<input type="button" style="opacity:0;height:1px;width:1px;padding:0px;margin:0px;float:right;" value="Go to top" onclick="gotoTopSection();" title="Go to top"/>
+</div>
+</footer>
+
+<!-- Dryfta core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script>window.jQuery || document.write('<script src="../templates/gaia-theme/js/jquery.min.js"><\/script>')</script>
+<script src="../templates/gaia-theme/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug 
+<script src="https://is4si2019.com/templates/gaia-theme/js/ie10-viewport-bug-workaround.js"></script>-->
+<script src="../templates/gaia-theme/js/custom.js"></script>
+<script>
+jQuery(document).ready(function () {
+  // jQuery("nav.navbar-float-top").autoHidingNavbar();
+  var topmenu = jQuery('#top_menu_login').html();
+
+  jQuery('#top_menu_login').remove();
+  jQuery('#d_mainmenu').append(topmenu);
+});
+</script>
+
+
+<div class="dryfta_trans_popupB" id="checkInternet" style="display:none; background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;height: 100%;left: 0;padding: 5px;position: fixed;top: 0;width: 100%;z-index: 999;">
+<div style="position: fixed; transition: all 0.8s ease-in-out 0.2s; background: rgb(254, 180, 0) none repeat scroll 0% 0%; color: rgb(255, 255, 255); bottom: 0px; border: 1px solid rgb(253, 154, 0); border-radius: 2px; margin: 0px 0px -2px -8px; height: 105px; padding:15px 15px 20px 20px; width: 260px;">
+<span style="font-weight: 600; display: inline-block; font-size: 14px; margin-bottom: 6px;"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Disconnected from server</span><br>
+<span style="font-size:12px;display: inline-block;line-height: 15px;">You are disconnected from the server. The changes you made may not be saved. Please check when connected.</span>
+</div>
+<div class="loader">
+<div class="inner one"></div>
+<div class="inner two"></div>
+<div class="inner three"></div>
+</div>
+</div>
+</body>
+</html>
+

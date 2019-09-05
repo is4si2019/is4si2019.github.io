@@ -1,0 +1,246 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="../../../templates/gaia-theme/js/jQuery_Migrate.js"></script>
+
+	  <base href="" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>   </title>
+  <link href="../../../templates/gaia-theme/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link rel="stylesheet" href="../../../templates/system/css/editor.css" type="text/css" />
+  <link rel="stylesheet" href="../../../templates/system/css/system.css" type="text/css" />
+  <link rel="stylesheet" href="../../../templates/gaia-theme/css/template.css" type="text/css" media="screen,projection"  />
+  <link rel="stylesheet" href="../../../templates/gaia-theme/css/position.css.html" type="text/css" media="screen,projection"  />
+  <link rel="stylesheet" href="../../../templates/gaia-theme/css/layout.css.html" type="text/css" media="screen,projection"  />
+  <link rel="stylesheet" href="../../../templates/gaia-theme/css/print.css.html" type="text/css" media="print"  />
+  <link rel="stylesheet" href="../../../templates/gaia-theme/css/.css.html" type="text/css" />
+  <script src="../../../media/system/js/mootools-core.js" type="text/javascript"></script>
+  <script src="../../../media/system/js/core.js" type="text/javascript"></script>
+  <script src="../../../media/system/js/mootools-more.js" type="text/javascript"></script>
+  <script src="../../../media/system/js/multiselect.js" type="text/javascript"></script>
+  <script src="../../../media/system/js/tabs.js" type="text/javascript"></script>
+  <script type="text/javascript">
+window.addEvent('domready', function() {
+			$$('.hasTip').each(function(el) {
+				var title = el.get('title');
+				if (title) {
+					var parts = title.split('::', 2);
+					el.store('tip:title', parts[0]);
+					el.store('tip:text', parts[1]);
+				}
+			});
+			var JTooltips = new Tips($$('.hasTip'), { maxTitleChars: 50, fixed: false});
+		});window.addEvent('domready', function() {
+				new Joomla.JMultiSelect('adminForm');
+			});	window.addEvent('domready', function(){ $$('dl.tabs').each(function(tabs){ new JTabs(tabs, {}); }); });
+  </script>
+
+<link href="../../../templates/gaia-theme/css/font-dryfta.css" rel="stylesheet">
+      <link href="../../../templates/gaia-theme/css/bootstrap.min.css" rel="stylesheet">
+      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug 
+      <link href="https://is4si2019.com/templates/gaia-theme/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    Custom styles for this template -->
+      <link href="../../../templates/gaia-theme/css/template.css" rel="stylesheet">
+         <link href="../../../templates/gaia-theme/css/mobile.css" rel="stylesheet">
+      <link href="../../../templates/gaia-theme/css/footer.css" rel="stylesheet">
+<link href="../../../templates/gaia-theme/css/signin.css" rel="stylesheet">
+
+<!--[if lte IE 6]>
+	<link href="/templates/gaia-theme/css/ieonly.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<style>
+.session_timings .session_section_list .myfavorite_icon > span {
+ 
+    padding: 2px 5px;
+ 
+}
+table{width: 100%;
+}
+</style>
+<script type="text/javascript">var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-60894180-1']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+          </script></head>
+<body class="contentpane" style="padding:20px;">
+	<div id="all">
+		<div id="main">
+			
+<div id="system-message-container">
+</div>
+			
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+<script type="text/javascript">
+	function sendVcardRequest(uid){
+   
+      var userid = 0;
+      if(userid==0){
+          alert("Please log in to send vCard Request!");
+          return false;
+      }
+      document.getElementById('page-loader').style.display="block";
+       var url = "index.php?option=com_dryfta&controller=users&task=sendVcardRequest&user_id="+uid;
+       var obj;
+       try
+       {
+          obj=new ActiveXobject("Microsoft.XMLHTTP");
+       }
+       catch(e)
+       {
+           try
+           {
+              obj=new XMLHttpRequest();
+           }
+          catch(e)
+          {
+              alert("your browser not support Ajax");
+          }
+       }
+       obj.open("GET",url,true);
+       obj.send(null);
+       obj.onreadystatechange=function(){
+          if(obj.readyState==4)
+          {           
+              document.getElementById('VcardRequest').value="vCard Requested";
+              document.getElementById('system-message-container').innerHTML='<dl id="system-message"><dt class="message">Message</dt><dd class="message message"><ul><li>'+obj.responseText+'</li></ul></dd></dl>';
+              document.getElementById('page-loader').style.display="none";
+          }    
+       }
+	}
+   
+	function sendMeetingRequest(uid){
+   
+       var userid = 0;
+      if(userid==0){
+          alert("Please log in to send Meeting Request!");
+          return false;
+      }
+      document.getElementById('page-loader').style.display="block";
+       var url = "index.php?option=com_dryfta&controller=users&task=sendMeetingRequest&user_id="+uid;
+       var obj;
+       try
+       {
+          obj=new ActiveXobject("Microsoft.XMLHTTP");
+       }
+       catch(e)
+       {
+           try
+           {
+              obj=new XMLHttpRequest();
+           }
+          catch(e)
+          {
+              alert("your browser not support Ajax");
+          }
+       }
+       obj.open("GET",url,true);
+       obj.send(null);
+       obj.onreadystatechange=function(){
+          if(obj.readyState==4)
+          {
+              document.getElementById('MeetingRequested').innerHTML='<div class="VcardRequestBlur">Meeting Requested</div>';
+              document.getElementById('system-message-container').innerHTML='<dl id="system-message"><dt class="message">Message</dt><dd class="message message"><ul><li>'+obj.responseText+'</li></ul></dd></dl>';
+              document.getElementById('page-loader').style.display="none";
+          }    
+       }
+	}
+	
+</script>
+
+<style>
+.dryfta_right_section .social_buttons span{max-width:70px;}
+@media (max-width: 715px) {
+    .profile_dryfta_user_LT #userImage1{width:100%;height:100%;}
+}
+.profile_dryfta_detials_RT_L .attendee_link a .icon-icon-researchgate{
+    background: #666;
+    color: #fff;
+    font-size: 16px;
+    padding: 1px 5px 5px 6px;
+    height: 23px;
+    display: inline-block;
+    border-radius: 2px;
+}
+</style>
+
+<div id="page-loader" style="display: none;">
+   <div class="loader">
+      <div class="inner one"></div>
+      <div class="inner two"></div>
+      <div class="inner three"></div>
+   </div>
+</div>
+<form action="https://is4si2019.com/en/program-schedule/program/index.php" method="post" name="adminForm" id="adminForm">
+   <div>
+      <div class="adminlist">
+         <div class="content_bottom">
+                        <div class="profile_dryfta_user_LT">
+               <div id="userImage1">                               
+                  <img src="https://dryfta-assets.s3-accelerate.amazonaws.com/assets/images/profile/default_blogger.png" id="prof_logo" alt="  profile image" title="  profile image" />
+               </div>
+            </div>
+            <div class="profile_dryfta_detials_RT">
+               <h2>
+                     
+               </h2>
+               <div class="dryfta_attendee_role" >
+                                 </div>
+               <div class="dryfta_attendee_orgnization" >
+                   
+               </div>
+            </div>
+            <div class="profile_dryfta_detials_RT_L">
+               <div class="dryfta_attendee_link">
+                  <div class="dryfta_attendee_orgnization_box">
+                                                                                                                           </div>
+               </div>
+            </div>
+			
+			            <div class="dry_b_vcardrequest" style="padding:0px;">
+                              <input type="button" id="VcardRequest" name="VcardRequest" value="Request vCard" onClick="sendVcardRequest(0)"/>
+                              <div id="MeetingRequested"><input type="button" id="MeetingRequest" name="MeetingRequest" value="Setup a Meeting" onClick="sendMeetingRequest(0)"/></div>
+                           </div>
+                  
+            <div class="clr"></div>
+            <div class="profileinfo">
+				
+<style>
+.profileinfopane h6{ text-align:left; }
+.spekr_abs_description{ font-size:14px; }
+.spekr_abs_date{ clear:both;font-size:13px; }
+.public_profile_fieldchild{ margin-left:10px; margin-top:-18px; }
+</style>
+
+	<div class="profileinfopane">
+		<dl class="tabs" id="menu-pane"><dt class="param-page"><span><span>Overview</span></span></dt><dd>			<div>
+			<div class="submittedAbstracts">
+			Public Profile is disabled !			</div>
+			</div>
+		</dd><dt class="param-page"><span><span>Sessions Attending </span> </span></dt><dd>This contact has not checked-in to any sessions.</dd></dl>	</div>				  
+               <div class="profieright" style="float:right">
+                                 </div>
+            </div>
+                        <div class="clr"></div>
+         </div>
+         <div class="clr"></div>
+      </div>
+      <div class="clr"></div>
+   </div>
+   <input type="hidden" name="285ad95458e858695bbaeacbf0a7deda" value="1" />   <input type="hidden" name="view" value="users" />
+   <input type="hidden" name="boxchecked" value="0" />
+   <input type="hidden" name="task" value="" />
+</form>
+		</div>
+	</div>
+</body>
+</html>

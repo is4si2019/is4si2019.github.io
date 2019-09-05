@@ -1,0 +1,1197 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#" xml:lang="en-gb" lang="en-gb" dir="ltr">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="../templates/gaia-theme/js/jQuery_Migrate.js"></script>
+
+<!-- add fonts for froala -->
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700,700italic&subset=latin,vietnamese,latin-ext,cyrillic,cyrillic-ext,greek-ext,greek' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700&subset=latin,greek,greek-ext,vietnamese,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
+
+<meta property="og:image" content="https://dryfta-assets.s3-accelerate.amazonaws.com/assets/is4si2019/images/1552162878smallworldorangenetworki.png" />
+
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <base href="" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="ALL" />
+  <meta name="author" content="dryfta.com" />
+  <meta name="language" content="English" />
+  <meta name="submission" content="http://dryfta.com" />
+  <meta name="contact" content="support@dryfta.com" />
+  <meta name="format" content="text/html" />
+  <meta name="document-classification" content="Event Management Platform" />
+  <meta name="document-distribution" content="Global" />
+  <title>Schedule</title>
+  <link href="../templates/gaia-theme/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link rel="stylesheet" href="../templates/system/css/editor.css" type="text/css" />
+  <link rel="stylesheet" href="../templates/system/css/froala_editor.pkgd.min.css" type="text/css" />
+  <link rel="stylesheet" href="../templates/system/css/froala_style.min.css" type="text/css" />
+  <style type="text/css">
+/* Mark: attempt to override -- not working */
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+}
+
+
+
+.dryfta_event_detail h1 {
+  font-family: inherit;
+  font-size: 38px;
+  margin: 20px 0 20px;
+  text-align: center;
+}
+
+.starter-template h2 {
+  font-family: inherit;
+  font-size: 32px;
+  margin: 20px 0 20px;
+  text-align: center;
+}
+
+.item-page h2, .item-page h4 {
+  font-family: inherit;
+}
+/* text */
+
+div.page-of-text {
+  width: 75%;
+  max-width: 600px;
+  min-width: 400px;
+}
+
+/* speakers */
+.speaker-box {
+  display: flex;
+  flex-wrap: wrap;
+  vertical-align: top;
+}
+
+.speaker {
+  margin: auto;
+  width: 240px;
+  height: 360px;
+  text-align: center;
+  
+}
+
+.speaker-image {
+  width: 200px;
+  margin: auto;
+}
+
+.speaker-image img {
+  border-radius: 50%;
+}
+
+.ical_gcal-box {
+display:none;
+}
+
+.title_banner_box {
+ line-height: 35px !important;
+}
+
+.drfta_NoData {
+display:none; !important;
+}
+
+
+/*@media only screen 
+and (max-width : 1600px) {
+  .register-button {
+    display:none;
+  }
+}
+*/
+  </style>
+  <script src="../media/system/js/mootools-core.js" type="text/javascript"></script>
+  <script src="../media/system/js/core.js" type="text/javascript"></script>
+  <script src="../media/system/js/mootools-more.js" type="text/javascript"></script>
+  <script src="../media/system/js/multiselect.js" type="text/javascript"></script>
+  <script type="text/javascript">
+window.addEvent('domready', function() {
+			$$('.hasTip').each(function(el) {
+				var title = el.get('title');
+				if (title) {
+					var parts = title.split('::', 2);
+					el.store('tip:title', parts[0]);
+					el.store('tip:text', parts[1]);
+				}
+			});
+			var JTooltips = new Tips($$('.hasTip'), { maxTitleChars: 50, fixed: false});
+		});window.addEvent('domready', function() {
+				new Joomla.JMultiSelect('adminForm');
+			});
+  </script>
+
+
+
+
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+ 
+
+      <!-- Dryfta core CSS -->
+<link href="../templates/gaia-theme/css/font-dryfta.css" rel="stylesheet">
+      <link href="../templates/gaia-theme/css/bootstrap.min.css" rel="stylesheet">
+      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug 
+      <link href="https://is4si2019.com/templates/gaia-theme/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    Custom styles for this template -->
+      <link href="../templates/gaia-theme/css/template.css" rel="stylesheet">
+         <link href="../templates/gaia-theme/css/mobile.css" rel="stylesheet">
+      <link href="../templates/gaia-theme/css/footer.css" rel="stylesheet">
+<link href="../templates/gaia-theme/css/signin.css" rel="stylesheet">
+      <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+      <!--[if lt IE 9]><script src="/templates/gaia-theme/js/ie8-responsive-file-warning.js"></script><![endif]-->
+      <script src="../templates/gaia-theme/js/ie-emulation-modes-warning.js"></script>
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+  if(sessionStorage.copmb == null){
+    if (navigator.userAgent.indexOf('MSIE') != -1)
+      var detectIEregexp = /MSIE (\d+\.\d+);/ //test for MSIE x.x
+    else // if no "MSIE" string in userAgent
+      var detectIEregexp = /Trident.*rv[ :]*(\d+\.\d+)/ //test for rv:x.x or rv x.x where Trident string exists
+
+    var path = "https://is4si2019.com/supported_browsers.html";
+    if (detectIEregexp.test(navigator.userAgent)){ 
+      var ieversion=new Number(RegExp.$1) // capture x.x portion and store as a number
+      if(ieversion>=11){
+        $('body').prepend('<div style="text-align:center;padding:8px;background:#FFF1A8 none repeat scroll 0 0" id="browsercomp_msg"><span>This version of Internet Explorer is no longer supported. Please upgrade to a <a style="color:#2A5BC5;" target="blank" href="'+path+'.html">supported browser</a>.</span> <span><a style="color:#2A5BC5;" onclick="closeBrowserMsg();" href="javascript:void(0);">Dismiss</a></span></div>');
+      }
+    }
+  }
+  
+  checkOnline();
+  
+    //code to add froala "fr-view" class in the section which are displaying editor content.
+	jQuery( ".dryfta_event_detail" ).addClass( "fr-view" ); //event detail - home page
+	jQuery( ".fr-editor-text-content" ).addClass( "fr-view" ); //article page
+	jQuery( ".mod_description" ).addClass( "fr-view" ); //custom widget description
+	jQuery( ".dryfta_user_instruction" ).addClass( "fr-view" ); //user instructions
+	jQuery( ".sessiondisc" ).addClass( "fr-view" ); //session description
+	jQuery( ".ses-detail-sub-ses-description" ).addClass( "fr-view" ); //sub-session description - detail page
+	jQuery( ".p-list-sub-ses-description" ).addClass( "fr-view" ); //sub-session description - list page
+	jQuery( ".dryftaDetail" ).addClass( "fr-view" ); //abstract archive
+});
+
+function closeBrowserMsg(){
+  var elem = document.getElementById("browsercomp_msg");
+  elem.parentElement.removeChild(elem);
+  sessionStorage.copmb = 1;
+}
+
+function checkOnline(){
+    setInterval("doOnlineCheck()", 1000);
+}
+function doOnlineCheck(){
+if(navigator.onLine){
+    
+     document.getElementById('checkInternet').style.display="none";
+ } else {
+    
+   document.getElementById('checkInternet').style.display="block";
+ }
+}
+
+function gotoTopSection(){
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+<meta name="google-site-verification" content="7AcgGf-UiASKoQT5c1tkPyvR6uT0zxUgko07H5udEDE" />
+<script type="text/javascript">var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-60894180-1']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+          </script></head>
+   <body class="Dryfta_site com_dryfta view-program no-layout no-task itemid-684">
+
+  
+<div class="Top_menu_section_inner">
+<div class="container">
+ 
+<div class="clr"></div>
+
+<nav class="navbar navbar-default navbar-float-top defaultc " role="navigation">
+ 
+            <div class="Logo_part_inner">		<div class="moduletable">
+					
+<script type="text/javascript">
+function gotoContentSection(){
+	document.getElementById('dryftacom_content_section').focus();
+	return false;
+}
+</script>
+
+<div class="dry-logo">
+		<div class="dayfta_logo_img"><a href="../index.html"><img src="https://dryfta-assets.s3-accelerate.amazonaws.com/assets/is4si2019/images/1552162878smallworldorangenetworki.png" alt="Site Logo Image" title="Site Logo Image"/></a>
+	<input type="button" title="Go to content section" value="Go to content section" onclick="gotoContentSection();" style="opacity:0;height: 1px;float: right;width:1px;padding:0;margin:0;"/>
+	</div>
+		<div class="dryfta_logo_title"><a href="../index.html">IS4SI 2019</a>
+	
+	</div>
+</div>
+		</div>
+	</div>
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+
+            </div>
+            <div id="navbar" class="  collapse navbar-collapse">
+ 
+                  
+<ul id="d_mainmenu" class="nav navbar-nav menu">
+    
+<li class="item-858"><a href="107-instructions.html" >Instructions</a></li><li class="item-822 deeper parent"><a href="84-practical.html" >General Information</a><ul><li class="item-862"><a href="84-practical/109-registration-fees-info.html" >Registration Fees Info</a></li><li class="item-808 parent"><a href="84-practical/72-clark-kerr-rooms.html" >On-Campus Rooms</a></li><li class="item-811"><a href="84-practical/74-hotels.html" >Local Hotels</a></li><li class="item-861"><a href="gallery.html" >Conference Venue</a></li><li class="item-826"><a href="84-practical/88-travel-information.html" >Local Travel</a></li><li class="item-827"><a href="84-practical/89-berkeley.html" >Berkeley</a></li><li class="item-857"><a href="84-practical/106-short-attendancc-e.html" >Single day Attendance</a></li><li class="item-848"><a href="84-practical/97-important-dates.html" >Important Dates</a></li></ul></li><li class="item-884"><a href="125-abstract-booklet.html" >Abstract Booklet</a></li><li class="item-849 deeper parent"><a href="98-submissions.html" >Submissions</a><ul><li class="item-850"><a href="98-submissions/99-general-submissions.html" >General Submissions</a></li><li class="item-851"><a href="../98-submissions/100-submissions-to-miniconferences.html" >Miniconferences</a></li></ul></li><li class="item-814"><a href="76-program.html" >Program</a></li><li class="item-684 current active"><a class="Program Schedule" href="program-schedule.html" >Schedule</a></li><li class="item-845"><a href="95-contact-us.html" >Contact US</a></li><li class="item-830 deeper parent"><a href="92-about.html" >About</a><ul><li class="item-828"><a href="92-about/90-privacy-policy.html" >Privacy Policy</a></li><li class="item-829"><a href="92-about/91-terms-and-conditions.html" >Terms and Conditions</a></li><li class="item-831"><a href="92-about/93-refund-cancellation-policy.html" >Refund/Cancellation Policy</a></li><li class="item-835"><a href="http://is4si.org/" target="_blank" >IS4SI Website</a></li></ul></li></ul>
+
+     <script>
+
+function animate(opts)
+{
+var start=new Date
+var id=setInterval(function(){var timePassed=new Date- start
+var progress=timePassed/opts.duration
+if(progress>1)progress=1
+var delta=opts.delta(progress)
+opts.step(delta)
+if(progress==1){clearInterval(id)}},opts.delay||10)
+}
+
+function popupOpenClose()
+{ 
+	var element = document.getElementById("dryfta_popup_message");
+	element.style.display ="none";
+}
+	
+function userLogOutNow(user_type)
+{
+	var url="index.php?option=com_dryfta&view=register&task=userLogoutFromPopup&user_type="+user_type;
+	var obj;
+	try
+	{
+		obj=new ActiveXobject("Microsoft.XMLHTTP"); 
+	}
+	catch(e)
+	{
+		try
+			{
+				obj=new XMLHttpRequest();
+			}
+		catch(e)
+			{ 
+				alert("your browser not support AJAX");
+			}
+	}
+	//step2
+	obj.open("GET",url,true);
+	obj.send(null);
+	//step3
+	obj.onreadystatechange=function()
+		{
+		if(obj.readyState==4)
+		{
+		if(user_type==1)
+		{
+		location.href = "https://is4si2019.com/index.php?option=com_dryfta&view=register&user_type=2";
+		}
+		if(user_type==2)
+		{
+		location.href = "https://is4si2019.com/index.php?option=com_dryfta&view=register";
+		}
+		}
+		
+		}
+
+}	
+ 
+</script>
+<ul id="top_menu_login" class="nav navbar-nav menu">
+<li class="item-507"><a href="userlogin.html" >Login</a></li></ul>
+ 
+ 
+            </div>
+            <!--/.nav-collapse -->
+ 
+      </nav>
+</div>
+</div>
+
+ <div id="dryftacom_content_section" tabindex="-1"><div class="wrapper_component_mod" id="custom_widget_1">
+					  <div class="container">
+					  <div class="dryfta-template">
+						  
+<div id="system-message-container">
+</div>
+						  <noscript><div class="js_disable_msg"><span style='color:red;'>Javascript is disabled on your browser. You have to enable javascript for better user experience.</span></div></noscript>
+
+<script type="text/javascript">
+function sortBy()
+{
+	document.getElementById('page-loader').style.display="block";
+	Joomla.submitform();
+}
+
+function submit()
+{
+	document.getElementById('task').value="";
+	Joomla.submitform();
+}
+
+function setFavorite(session_id,user_id)
+{ 
+	document.getElementById('page-loader').style.display="block";
+	var url="index.php?option=com_dryfta&view=program&task=setFavorite&session_id="+session_id+"&user_id="+user_id;
+	var obj;
+	try
+	{
+	  obj=new ActiveXobject("Microsoft.XMLHTTP");
+	}
+	catch(e)
+	{
+	  try
+	  {
+		obj=new XMLHttpRequest();
+	  }
+	  catch(e)
+	  { alert("your browser not support AJAX");}
+	}
+	//step2
+	obj.open("GET",url,true);
+	obj.send(null);
+	//step3
+	obj.onreadystatechange=function()
+	{
+	  if(obj.readyState==4)
+	  {
+		var res=obj.response;
+		if(res==1)
+		{
+			document.getElementById('myfavorite-'+session_id).innerHTML='<div class="myfavorite_icon"><span onclick="unsetFavorite('+session_id+','+user_id+')" ><i class="fa fa-heart ative"  ></i><span class="d-label">Added to Schedule</span></span></div>';
+			document.getElementById('system-message-container').innerHTML='<dl id="system-message"><dt class="message">Message</dt><dd class="message message"><ul><li>Successfully added to your schedule!</li></ul></dd></dl>';
+		}
+		document.getElementById('page-loader').style.display="none";
+	  }
+	}
+}
+
+function unsetFavorite(session_id,user_id)
+{
+	document.getElementById('page-loader').style.display="block";
+	var url="index.php?option=com_dryfta&view=program&task=unsetFavorite&session_id="+session_id+"&user_id="+user_id;
+	var obj;
+	try
+	{
+	  obj=new ActiveXobject("Microsoft.XMLHTTP");
+	}
+	catch(e)
+	{
+	  try
+	  {
+		obj=new XMLHttpRequest();
+	  }
+	  catch(e)
+	  { alert("your browser not support AJAX");}
+	}
+	//step2
+	obj.open("GET",url,true);
+	obj.send(null);
+	//step3
+	obj.onreadystatechange=function()
+	{
+	  if(obj.readyState==4)
+	  {
+		var res=obj.response;
+		if(res==1)
+		{ 
+		 document.getElementById('myfavorite-'+session_id).innerHTML='<div class="myfavorite_icon"><span onclick="setFavorite('+session_id+','+user_id+')" class="addmyscheduleL"><i class="fa fa-heart-o"></i> <span class="d-label">Add to my Schedule</span></span></div>';
+		  document.getElementById('system-message-container').innerHTML='<dl id="system-message"><dt class="message">Message</dt><dd class="message message"><ul><li>Removed from your schedule!</li></ul></dd></dl>';            
+		}
+		document.getElementById('page-loader').style.display="none";
+	  }
+	}
+}
+  
+  function loginFirst()
+  {
+  if((window.self !== window.top)){
+    window.location.href="/en/program-schedule/register/login?tmpl=component&amp;return=aW5kZXgucGhwP29wdGlvbj1jb21fZHJ5ZnRhJnZpZXc9cHJvZ3JhbSZJdGVtaWQ9Njg0";
+  }else{
+    window.location.href="/en/program-schedule/register/login?return=aW5kZXgucGhwP29wdGlvbj1jb21fZHJ5ZnRhJnZpZXc9cHJvZ3JhbSZJdGVtaWQ9Njg0";
+  }
+  }
+  
+  function sessionCheckin(session_id,user_id,new_status,waiting){
+    document.getElementById('page-loader').style.display="block";
+    var url="index.php?option=com_dryfta&view=program&task=sessionCheckin&session_id="+session_id+"&user_id="+user_id+"&new_status="+new_status+"&waiting="+waiting;
+    var obj;
+    try
+    {
+      obj=new ActiveXobject("Microsoft.XMLHTTP");
+    }
+    catch(e)
+    {
+      try
+      {
+        obj=new XMLHttpRequest();
+      }
+      catch(e)
+      { alert("your browser not support AJAX");}
+    }
+    //step2
+    obj.open("GET",url,true);
+    obj.send(null);
+    //step3
+    obj.onreadystatechange=function()
+    {
+      if(obj.readyState==4)
+      {
+        var res=obj.response;
+        if(res==1)
+        { 
+        
+        if(new_status==1){
+
+          var chkinMsg = "Check-out";
+          var chkinSucc = "You have checked-in successfully!";
+           if(waiting==1){ chkinMsg = "Remove from Waitlist";
+				chkinSucc = "Successfully added to Waitlist!";
+            }
+
+          document.getElementById('sessionCheckin_'+session_id).innerHTML='<a href="javascript:sessionCheckin('+session_id+','+user_id+',0,'+waiting+');" class="check-out"> <i class="fa fa-circle-o"  style="color: orange;"></i>  '+chkinMsg+'</a>';
+          document.getElementById('system-message-container').innerHTML='<dl id="system-message"><dt class="message">Message</dt><dd class="message message"><ul><li>'+chkinSucc+'</li></ul></dd></dl>';
+        }else{
+           var chkinMsg = "Check-in";
+           var chkinSucc = "You have checked-out successfully!";
+           if(waiting==1){ chkinMsg = "Add to Waitlist";
+				chkinSucc = "Successfully removed from Waitlist!";
+            }
+
+          document.getElementById('sessionCheckin_'+session_id).innerHTML='<a href="javascript:sessionCheckin('+session_id+','+user_id+',1,'+waiting+');" class="checkin"><i class="fa fa-check-circle-o"></i>  '+chkinMsg+'</a>';
+          document.getElementById('system-message-container').innerHTML='<dl id="system-message"><dt class="message">Message</dt><dd class="message message"><ul><li>'+chkinSucc+'</li></ul></dd></dl>';
+        }
+        
+        }
+        document.getElementById('page-loader').style.display="none";
+        Joomla.submitform();
+      }
+    }
+}
+
+function openCheckinPopup(session_id,user_id,new_status,waiting){
+  document.getElementById('confirmPasswordPopUp').style.display="block";
+  document.getElementById('checkinButtonParam').innerHTML = '<input type="button" name="confirmsubmit" id="confirmsubmit" class="checkinValidateBtn" onclick="validateSessionCheckin('+session_id+','+user_id+','+new_status+','+waiting+');" value="Check-in" />';
+
+}
+
+function validateSessionCheckin(session_id,user_id,new_status,waiting){
+
+    var checkinSecret = document.getElementById('checkinSecret').value;
+    if(checkinSecret==''){
+      alert("Enter the secret code to Check-in to the session");
+      document.getElementById('checkinSecret').focus();
+      document.getElementById('checkinSecret').style.borderColor='red';
+      return false;
+    }
+    document.getElementById('checkinSecret').style.borderColor='';
+    document.getElementById('page-loader').style.display="block";
+    document.getElementById('confirmPasswordPopUp').style.display ='none';
+
+    var url="index.php?option=com_dryfta&view=program&task=validateSessionCheckin&session_id="+session_id+"&user_id="+user_id+"&new_status="+new_status+"&waiting="+waiting+"&checkinSecret="+checkinSecret;
+    var obj;
+    try
+    {
+      obj=new ActiveXobject("Microsoft.XMLHTTP");
+    }
+    catch(e)
+    {
+      try
+      {
+        obj=new XMLHttpRequest();
+      }
+      catch(e)
+      { alert("your browser not support AJAX");}
+    }
+    //step2
+    obj.open("GET",url,true);
+    obj.send(null);
+    //step3
+    obj.onreadystatechange=function()
+    {
+      if(obj.readyState==4)
+      {
+        var res=obj.response; 
+        if(res==1)
+        { 
+        
+          if(new_status==1){
+
+            var chkinMsg = "Check-out";
+            var chkinSucc = "You have checked-in successfully!";
+             if(waiting==1){ 
+				chkinMsg = "Remove from Waitlist";
+                chkinSucc = "Successfully added to Waitlist!";
+              }
+
+            document.getElementById('sessionCheckin_'+session_id).innerHTML='<a href="javascript:sessionCheckin('+session_id+','+user_id+',0,'+waiting+');" class="check-out"> <i class="fa fa-circle-o"  style="color: orange;"></i>  '+chkinMsg+'</a>';
+            document.getElementById('system-message-container').innerHTML='<dl id="system-message"><dt class="message">Message</dt><dd class="message message"><ul><li>'+chkinSucc+'</li></ul></dd></dl>';
+          }else{
+             var chkinMsg = "Check-in";
+             var chkinSucc = "You have checked-out successfully!";
+             if(waiting==1){ chkinMsg = "Add to Waitlist";
+				chkinSucc = "Successfully removed from Waitlist!";
+              }
+
+            document.getElementById('sessionCheckin_'+session_id).innerHTML='<a href="javascript:sessionCheckin('+session_id+','+user_id+',1,'+waiting+');" class="checkin"><i class="fa fa-check-circle-o"></i>  '+chkinMsg+'</a>';
+            document.getElementById('system-message-container').innerHTML='<dl id="system-message"><dt class="message">Message</dt><dd class="message message"><ul><li>'+chkinSucc+'</li></ul></dd></dl>';          
+          }
+          
+          document.getElementById('page-loader').style.display="none";
+          document.getElementById('checkinSecret').value = '';
+          window.location.reload();
+
+        }else{
+
+          document.getElementById('page-loader').style.display="none";
+          document.getElementById('confirmPasswordPopUp').style.display ='block';
+          chkinSucc = "Invalid Secret Code";
+          alert(chkinSucc); 
+
+        }
+      }
+    }
+}
+
+function printSessions(opt)
+{
+    if (navigator.userAgent.indexOf('MSIE') != -1)
+    var detectIEregexp = /MSIE (\d+\.\d+);/ //test for MSIE x.x
+    else // if no "MSIE" string in userAgent
+    var detectIEregexp = /Trident.*rv[ :]*(\d+\.\d+)/ //test for rv:x.x or rv x.x where Trident string exists
+
+    if (detectIEregexp.test(navigator.userAgent)){
+        alert("Dynamic printing is not supported in Internet Explorer browser. Use modern browsers like Firefox, Chrome or Safari.");
+        return false;
+    }
+    
+    if(opt == 1){
+        //document.getElementById('csvid').value = 1;
+    }
+	createPdfFile(opt);
+}
+
+function createPdfFile(opt){
+	document.getElementById('page-loader').style.display="block";
+	document.getElementById('pdf_gen_msg').style.display="block";
+	var url = "index.php";
+	var params = "option=com_dryfta&view=program&task=printSessions&opt="+opt+"&layout=default&285ad95458e858695bbaeacbf0a7deda=1";
+	var obj;
+	try
+	{
+	obj=new ActiveXobject("Microsoft.XMLHTTP");
+	}
+	catch(e)
+	{
+	try
+	{
+	obj=new XMLHttpRequest();
+	}
+	catch(e)
+	{ alert("your browser not support AJAX");}
+	}
+	//step2
+	//Send the proper header information along with the request
+	obj.open("POST",url,true);
+	obj.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	obj.send(params);
+
+	//step3
+	obj.onreadystatechange=function()
+	{
+		if(obj.readyState==4)
+		{
+			var pdfname=obj.response; 		
+			if(pdfname == 1){
+    			setTimeout(printSessions, 3000, 0);
+    		}else if(pdfname == 2){
+    		    //document.getElementById('csvid').value = 0;
+    		    document.getElementById('page-loader').style.display="none";
+    		    document.getElementById('pdf_gen_msg').style.display="none";
+    		    window.open('https://is4si2019.com/index.php?option=com_dryfta&view=program&layout=print&tmpl=component', '_blank');
+    		}else{
+    		    //document.getElementById('csvid').value = 0;
+    		    document.getElementById('page-loader').style.display="none";
+    		    document.getElementById('pdf_gen_msg').style.display="none";
+    		}
+		}
+	}
+}
+
+function closeCheckinSecretPopUp(){
+    document.getElementById('checkinSecret').value = '';
+    document.getElementById('confirmPasswordPopUp').style.display ='none';
+}
+
+function loadDateSessions(datesel, loadmore, loaded_sessions){
+	if(loadmore == 0){
+		document.getElementById('page-loader').style.display="block";
+	}
+	var url="index.php?option=com_dryfta&view=program&task=loadDateSessions";
+	var obj = new XMLHttpRequest();
+	try
+	{
+	obj=new ActiveXobject("Microsoft.XMLHTTP"); 
+	}
+	catch(e)
+	{
+	try
+	{
+	obj=new XMLHttpRequest();
+	}
+	catch(e)
+	{ 
+	alert("your browser not support AJAX");
+	}
+	}
+	
+	//step2
+	//Send the proper header information along with the request
+	var formData = new FormData();
+	formData.append("ses_date", datesel);
+    formData.append("loadmore", loadmore);
+	formData.append("loaded_sessions", loaded_sessions);
+	formData.append("layout", "default");
+	formData.append("listview", "1");
+		obj.open("POST",url,true);
+	obj.send(formData);
+	
+	//step3
+	obj.onreadystatechange=function()
+	{ 
+	if(obj.readyState==4 && obj.status == 200)
+	{
+		var res = obj.responseText;
+		document.getElementById('session_content_box').innerHTML = res;
+		document.getElementById('session_load_more_icon').style.display="none";
+		document.getElementById('page-loader').style.display="none";
+	}
+	}
+}
+
+jQuery(document).ready(function($){
+        jQuery(document).ready(function() {
+    	var a_date = $('input[name="session_date"]:checked').val();
+    	loadDateSessions(a_date, 0, 0);
+    });
+        
+    //load on scroll
+	/* removed
+	$(window).scroll(function() {
+		if($(window).scrollTop() >= $('#session_content_box').offset().top + $('#session_content_box').outerHeight() - window.innerHeight){
+			var a_date = $('input[name="session_date"]:checked').val();
+			var total_sessions = $('#session_count_'+a_date).val();
+			var loaded_sessions = $('#loaded_sessions_'+a_date).val();
+			
+			if(Number(total_sessions) > Number(loaded_sessions)){
+				$('.session_load_more_icon').show();
+				loadDateSessions(a_date, 1, loaded_sessions);
+			}else{
+				$('.session_load_more_icon').hide();
+			}
+		}
+	}); */
+	
+});
+	
+function resetFilters(){
+	document.getElementById('filter_search').value = "";
+	if(document.getElementById('venue')){
+		document.getElementById('venue').value = "";
+	}
+	if(document.getElementById('formattype')){
+		document.getElementById('formattype').value = "";
+	}
+	if(document.getElementById('trk_btn_0')){
+		document.getElementById('trk_btn_0').checked = true;
+	}
+	if(document.getElementById('moderator')){
+		document.getElementById('moderator').value = "";
+	}
+	if(document.getElementById('speaker')){
+		document.getElementById('speaker').value = "";
+	}
+	if(document.getElementById('time')){
+		document.getElementById('time').value = "";
+	}
+	if(document.getElementById('sub_session')){ 
+		document.getElementById('sub_session').value = "";
+	}
+	if(document.getElementById('presenter')){ 
+		document.getElementById('presenter').value = "";
+	}
+	document.getElementById('page-loader').style.display="block";
+	Joomla.submitform();
+}
+
+function openSessionSurvey(sesid){
+    document.getElementById('task').value = "openSessionSurvey";
+    document.getElementById('surveysession').value = sesid;
+	Joomla.submitform(); 
+}
+
+function loadAdvanceFilter(filteritem, filterval){
+	document.getElementById('loading_filter_icon_'+filteritem).style.display = 'block';
+	var url="index.php";
+	var params = "option=com_dryfta&view=program&task=loadAdvanceFilter&filteritem="+filteritem+"&filterval="+filterval+"&285ad95458e858695bbaeacbf0a7deda=1";
+	var obj = new XMLHttpRequest();
+
+	try
+	{
+	obj=new ActiveXobject("Microsoft.XMLHTTP");
+	}
+	catch(e)
+	{
+	try
+	{
+	obj=new XMLHttpRequest();
+	}
+	catch(e)
+	{ alert("your browser not support AJAX");}
+	}
+	//step2
+	//Send the proper header information along with the request
+	obj.open("POST",url,true);
+	obj.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	obj.send(params);
+	//step3
+	obj.onreadystatechange=function()
+	{
+	if(obj.readyState==4)
+	{
+	var res=obj.responseText;
+	document.getElementById('filter_dropdown_list_'+filteritem).innerHTML = res;
+	document.getElementById('filter_dropdown_list_'+filteritem).style.display = "block";
+	document.getElementById('loading_filter_icon_'+filteritem).style.display = 'none';
+	}
+	}
+}
+
+function selectFilterFromList(filterval, filteritem){
+	
+	if(document.getElementById('filter_box_venue').value == ""){
+	    document.getElementById('venue').value = '';
+	}
+	if(document.getElementById('filter_box_formattype').value == ""){
+	    document.getElementById('formattype').value = '';
+	}
+	if(document.getElementById('filter_box_moderator').value == ""){
+	    document.getElementById('moderator').value = '';
+	}
+	if(document.getElementById('filter_box_speaker').value == ""){
+	    document.getElementById('speaker').value = '';
+	}
+	if(document.getElementById('filter_box_time').value == ""){
+	    document.getElementById('time').value = '';
+	}
+	if(document.getElementById('filter_box_sub_session').value == ""){
+	    document.getElementById('sub_session').value = '';
+	}
+	if(document.getElementById('filter_box_presenter').value == ""){
+	    document.getElementById('presenter').value = '';
+	}
+	
+	if(filterval == 0){ filterval = ''; }
+	if(filteritem == 1){
+		document.getElementById('venue').value = filterval;
+	}
+	if(filteritem == 2){
+		document.getElementById('formattype').value = filterval;
+	}
+	if(filteritem == 3){
+		document.getElementById('moderator').value = filterval;
+	}
+	if(filteritem == 4){
+		document.getElementById('speaker').value = filterval;
+	}
+	if(filteritem == 5){
+		document.getElementById('time').value = filterval;
+	}
+	if(filteritem == 6){
+		document.getElementById('sub_session').value = filterval;
+	}
+	if(filteritem == 7){
+		document.getElementById('presenter').value = filterval;
+	}
+	document.getElementById('filter_dropdown_list_'+filteritem).style.display = "none";
+	sortBy();
+}
+
+function clearAdvanceFilter(id){
+	if(id == 'track'){
+		if(document.getElementById('trk_btn_0')){
+			document.getElementById('trk_btn_0').checked = true;
+		}
+	}else{
+		document.getElementById(id).value = '';
+		document.getElementById('filter_box_'+id).value = '';
+	}
+	sortBy();
+}
+
+function activateAdvanceFilter(filteritem, e){
+	e.removeAttribute('readonly');
+	e.value = '';
+	loadAdvanceFilter(filteritem, e.value);
+}
+
+jQuery(document).mouseup(function(e) 
+{
+    var container = jQuery('.filter_dropdown_list');
+    // if the target of the click isn't the container nor a descendant of the container
+    if (!container.is(e.target) && container.has(e.target).length === 0) 
+    {
+        container.hide();
+    }
+});
+</script>
+
+<style>
+.session_timings.this_break .session_type_date .fa{vertical-align:middle;padding-right:10px;}
+.prospeaker_me.speaking_ses{
+background: #C0CA33;
+padding: 3px 15px;
+border: 1px solid #C0CA33;
+font-weight: 400;
+color: #000;
+font-size: 11px;
+line-height: 15px;
+}
+
+.p-list-sub-session{
+    display: inline-block;
+    width: 75%; float:right;
+    padding:15px 5px;
+}
+.p-list-sub-ses-time{
+    width: 100%; vertical-align:top;
+    display: inline-block; color:#000;
+}
+.p-list-sub-ses-descr{
+    width: 100%; display: inline-block;
+}
+.p-list-subsess-title{ font-weight:600;text-decoration:underline; }
+
+.track_search_box{ display:inline-block;width:100%;margin-bottom: 10px; }
+.track_search_box .radioselect-label {
+    cursor: pointer; min-width:100px; width:auto;
+    margin: 0px 14px 16px 0px; display:inline-block;
+    text-align: center; border-radius:4px;
+    padding: 3px 15px; color:#fff;font-size:14px;
+}
+.track_search_box .radioselect-label:hover { color:#000; }
+.track_search_box .radioselect:checked + .radioselect-label{ color:#000; }
+.track_search_box input[type="radio"]{ float:left; display:none; }
+.p_moderator_role_org, .p_spkr_role_org{ font-size:10px; }
+.div_mix_section .p_spkr_role, .div_mix_section .p_spkr_org, .div_mix_section .p_moderator_role, .div_mix_section .p_moderator_org{ padding:0px; }
+.session_timings .session_section_list .session_type_section{ min-height:auto; }
+.session_print_button.view-switch-btn{ background: #000; }
+
+.filter_dropdown_list{
+    background: #f7f8f7;
+    width: 87.8%;
+    z-index: 9;
+    overflow: hidden;
+    border: 1px solid #b7b7b7;
+    border-top: none;
+    border-radius: 3px;
+    padding: 6px 0;
+}
+.filter_dropdown_list .user_dlist_ul {
+    max-height: 200px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+	text-align:left; font-size:13px;
+}
+
+.filter_dropdown_list .user_dlist_ul li {
+    width: 100%;
+    cursor: pointer; border-bottom:1px solid #eee;
+    padding: 1px 0px 1px 8px;
+    color: #000;
+}
+.filter_dropdown_list .user_dlist_ul li:hover { color:#999; }
+#program_advance_filter .btn-group.pull-right{ max-width:200px; width:200px; vertical-align:top; position:relative; }
+#program_advance_filter .reset_filter_box { display:none; position: absolute; right: 7px; margin-top: -28px; }
+#program_advance_filter .reset_filter_box.applied { display:block; }
+#program_advance_filter .filter_input_f.applied{ border-color:#000; }
+.filter-selected-infobox{ padding: 10px 0; }
+.filter-selected-infobox .filter-sel-infoval {
+	border: 1px solid #000;
+    padding: 4px 8px; font-size:12px;
+    border-radius: 4px; font-weight:100;
+    color: #000; margin-right:8px;
+}
+#program_advance_filter .reset_filter_box .fa-close, .filter-selected-infobox .filter-sel-infoval .fa-close{ color:#000; cursor:pointer; padding-left:4px; font-size:12px; }
+</style>
+
+<div id="page-loader" >
+	<span style="color:#fff;display:none;" id="pdf_gen_msg">Print preview is being generated...</span><br>
+    <div class="loader">
+      <div class="inner one"></div>
+      <div class="inner two"></div>
+      <div class="inner three"></div>
+    </div>
+</div>
+<div id="dryftaprogramlistlayout" class="program_simple_list">
+<form action="program-schedule.html" method="post" name="adminForm" id="adminForm" enctype="multipart/form-data">
+  
+<fieldset>
+<div id="editcell">
+  <h1>Schedule</h1>
+	<div class="dryfta_header_section">	
+	
+    <div class="filterbutton">
+      <div class="filter-search btn-group pull-left">
+        <input type="text" name="filter_search" id="filter_search" placeholder="Search by session name" value="" />
+      </div>
+      <div class="btn-group pull-left">
+        <button type="submit" value="Search" onclick="submit();">Search</button>
+        <button type="button"  onclick="resetFilters();">Reset</button>
+      </div>  
+    </div>
+	
+	<div class="filterdrobbox">
+			</div>
+
+    	<div class="filterdrobbox" id="program_advance_filter"> 
+        <div class="btn-group pull-right">
+			<span>
+			<input class="filter_input_f " type="text" id="filter_box_venue" onkeyup="loadAdvanceFilter(1, this.value);" onfocus="activateAdvanceFilter(1, this);" value="" placeholder="Search By Venue" autocomplete="off" readonly />
+			<span class="reset_filter_box "><i class="fa fa-close" onclick="clearAdvanceFilter('venue');"></i></span>
+			<input type="hidden" id="venue" name="venue" value="">
+			<span class="filter_dropdown_list" id="filter_dropdown_list_1" style="display:none;width:99.8%;padding-top:10px;"></span>
+			</span>
+			<span id="loading_filter_icon_1" style="background:url(https://is4si2019.com/administrator/components/com_dryfta/assets/images/giphy.gif) no-repeat scroll center center; display: none; margin-top:3px;width:60px;height:6px;"></span>
+        </div>
+
+        <div class="btn-group pull-right">
+			<span>
+			<input class="filter_input_f " type="text" id="filter_box_formattype" onkeyup="loadAdvanceFilter(2, this.value);" onfocus="activateAdvanceFilter(2, this);" value="" placeholder="Search By Format" autocomplete="off" readonly />
+			<span class="reset_filter_box "><i class="fa fa-close" onclick="clearAdvanceFilter('formattype');"></i></span>
+			<input type="hidden" id="formattype" name="formattype" value="">
+			<span class="filter_dropdown_list" id="filter_dropdown_list_2" style="display:none;width:99.8%;padding-top:10px;"></span>
+			</span>
+			<span id="loading_filter_icon_2" style="background:url(https://is4si2019.com/administrator/components/com_dryfta/assets/images/giphy.gif) no-repeat scroll center center; display: none; margin-top:3px;width:60px;height:6px;"></span>
+        </div> 
+        
+        <div class="btn-group pull-right">
+			<span>
+			<input class="filter_input_f " type="text" id="filter_box_moderator" onkeyup="loadAdvanceFilter(3, this.value);" onfocus="activateAdvanceFilter(3, this);" value="" placeholder="Search By Moderator" autocomplete="off" readonly />
+			<span class="reset_filter_box "><i class="fa fa-close" onclick="clearAdvanceFilter('moderator');"></i></span>
+			<input type="hidden" id="moderator" name="moderator" value="">
+			<span class="filter_dropdown_list" id="filter_dropdown_list_3" style="display:none;width:99.8%;padding-top:10px;"></span>
+			</span>
+			<span id="loading_filter_icon_3" style="background:url(https://is4si2019.com/administrator/components/com_dryfta/assets/images/giphy.gif) no-repeat scroll center center; display: none; margin-top:3px;width:60px;height:6px;"></span>
+        </div>
+        
+        <div class="btn-group pull-right">
+			<span>
+			<input class="filter_input_f " type="text" id="filter_box_speaker" onkeyup="loadAdvanceFilter(4, this.value);" onfocus="activateAdvanceFilter(4, this);" value="" placeholder="Search By Speaker" autocomplete="off" readonly />
+			<span class="reset_filter_box "><i class="fa fa-close" onclick="clearAdvanceFilter('speaker');"></i></span>
+			<input type="hidden" id="speaker" name="speaker" value="">
+			<span class="filter_dropdown_list" id="filter_dropdown_list_4" style="display:none;width:99.8%;padding-top:10px;"></span>
+			</span>
+			<span id="loading_filter_icon_4" style="background:url(https://is4si2019.com/administrator/components/com_dryfta/assets/images/giphy.gif) no-repeat scroll center center; display: none; margin-top:3px;width:60px;height:6px;"></span>
+        </div>  
+    
+        <div class="btn-group pull-right">
+			<span>
+			<input class="filter_input_f " type="text" id="filter_box_time" onkeyup="loadAdvanceFilter(5, this.value);" onfocus="activateAdvanceFilter(5, this);" value="" placeholder="Search By Time" autocomplete="off" readonly />
+			<span class="reset_filter_box "><i class="fa fa-close" onclick="clearAdvanceFilter('time');"></i></span>
+			<input type="hidden" id="time" name="time" value="">
+			<span class="filter_dropdown_list" id="filter_dropdown_list_5" style="display:none;width:99.8%;padding-top:10px;"></span>
+			</span>
+			<span id="loading_filter_icon_5" style="background:url(https://is4si2019.com/administrator/components/com_dryfta/assets/images/giphy.gif) no-repeat scroll center center; display: none; margin-top:3px;width:60px;height:6px;"></span>
+        </div>
+
+                <div class="btn-group pull-right">
+			<span>
+			<input class="filter_input_f " type="text" id="filter_box_sub_session" onkeyup="loadAdvanceFilter(6, this.value);" onfocus="activateAdvanceFilter(6, this);" value="" placeholder="Search by Individual Paper Sessions" autocomplete="off" readonly />
+			<span class="reset_filter_box "><i class="fa fa-close" onclick="clearAdvanceFilter('sub_session');"></i></span>
+			<input type="hidden" id="sub_session" name="sub_session" value="">
+			<span class="filter_dropdown_list" id="filter_dropdown_list_6" style="display:none;width:99.8%;padding-top:10px;"></span>
+			</span>
+			<span id="loading_filter_icon_6" style="background:url(https://is4si2019.com/administrator/components/com_dryfta/assets/images/giphy.gif) no-repeat scroll center center; display: none; margin-top:3px;width:60px;height:6px;"></span>
+        </div>
+
+		<div class="btn-group pull-right">
+			<span>
+			<input class="filter_input_f " type="text" id="filter_box_presenter" onkeyup="loadAdvanceFilter(7, this.value);" onfocus="activateAdvanceFilter(7, this);" value="" placeholder="Search by Presenters/Authors" autocomplete="off" readonly />
+			<span class="reset_filter_box "><i class="fa fa-close" onclick="clearAdvanceFilter('presenter');"></i></span>
+			<input type="hidden" id="presenter" name="presenter" value="">
+			<span class="filter_dropdown_list" id="filter_dropdown_list_7" style="display:none;width:99.8%;padding-top:10px;"></span>
+			</span>
+			<span id="loading_filter_icon_7" style="background:url(https://is4si2019.com/administrator/components/com_dryfta/assets/images/giphy.gif) no-repeat scroll center center; display: none; margin-top:3px;width:60px;height:6px;"></span>
+        </div>
+        
+    </div>
+	
+		<div class="dryfta_user_instruction">
+	<div class="dryfta_information_descript">
+	<p>The PDF version can be downloaded here:&nbsp;<a href="https://drive.google.com/open?id=1DDtmb41OGNQup5Yr8lJJPTH0VDllAt2y">https://drive.google.com/open?id=1DDtmb41OGNQup5Yr8lJJPTH0VDllAt2y</a></p>	</div>
+	</div>
+	    
+    <div class="clr"></div>
+	</div>
+	
+		<a href="program-schedule/program/expanded.html">
+	<div class="session_print_button view-switch-btn expand-btn"><div class="">
+    <span class="toolbar-list" title="">
+	View Expanded Schedule    </span></div></div>
+	</a>
+		<a href="program-schedule/program%3Flayout=print&amp;tmpl=component.html" target="_blank">
+	<div class="session_print_button"><div class="">
+    <span class="toolbar-list" title=""><i class="fa fa-print" aria-hidden="true"></i>
+	Print Schedule (PDF)    </span></div></div>
+	</a>
+	    <div style="clear:both"></div>
+
+    <div class="all_session_box color_listdeis" id="all_session_box">
+	<div class="session_date_select_box"><input class="dateselect_radio" type="radio" name="session_date" value="2019-06-02" id="session_date_1" onchange="loadDateSessions(this.value, 0, 0);" checked="checked"/><label class="session_date_label" for="session_date_1"><span>Day 1 </span><br><span class="date_format"> Jun 02, 2019 </span></label><input type="hidden" id="session_count_2019-06-02" value="26"><input class="dateselect_radio" type="radio" name="session_date" value="2019-06-03" id="session_date_2" onchange="loadDateSessions(this.value, 0, 0);" /><label class="session_date_label" for="session_date_2"><span>Day 2 </span><br><span class="date_format"> Jun 03, 2019 </span></label><input type="hidden" id="session_count_2019-06-03" value="24"><input class="dateselect_radio" type="radio" name="session_date" value="2019-06-04" id="session_date_3" onchange="loadDateSessions(this.value, 0, 0);" /><label class="session_date_label" for="session_date_3"><span>Day 3 </span><br><span class="date_format"> Jun 04, 2019 </span></label><input type="hidden" id="session_count_2019-06-04" value="26"><input class="dateselect_radio" type="radio" name="session_date" value="2019-06-05" id="session_date_4" onchange="loadDateSessions(this.value, 0, 0);" /><label class="session_date_label" for="session_date_4"><span>Day 4 </span><br><span class="date_format"> Jun 05, 2019 </span></label><input type="hidden" id="session_count_2019-06-05" value="16"><input class="dateselect_radio" type="radio" name="session_date" value="2019-06-06" id="session_date_5" onchange="loadDateSessions(this.value, 0, 0);" /><label class="session_date_label" for="session_date_5"><span>Day 5 </span><br><span class="date_format"> Jun 06, 2019 </span></label><input type="hidden" id="session_count_2019-06-06" value="23"></div><div class="session_content_section" id="session_content_box"></div><div class="session_load_more_icon" id="session_load_more_icon"><i class="fa fa-circle-o-notch fa-spin fa-fw"></i>Loading more sessions</div>	</div>
+    
+</div>
+</fieldset>
+
+<input type="hidden" name="285ad95458e858695bbaeacbf0a7deda" value="1" /><input type="hidden" name="option" value="com_dryfta" />
+<input type="hidden" name="task" id="task" value="" />
+<input type="hidden" name="view" value="program" />
+<input type="hidden" name="surveysession" id="surveysession" value="" />
+<input type="hidden" name="filter_order" value="" />
+<input type="hidden" name="filter_order_Dir" value="" />
+</form>
+</div>
+
+
+<div class="dryfta_trans_popupB checkinValBoxOuter" id="confirmPasswordPopUp" style="display:none;">
+  <div class="dryfta-confirmpass_box checkinValBox" > 
+      <div class="close_confirmpass_button">
+      <div class="d_settings_addmenu"> 
+      <span class="close_confirmpass">
+      <a style="margin-right:0px" onclick="closeCheckinSecretPopUp();" href="javascript:void(0)"> <i class="fa fa-close"></i> Close</a>
+      </span>
+      </div>
+      </div>
+
+      <div class="dryfta_flieldset_box checkinValidateBox"> 
+      <h5>Please enter the four digit secret code <br><span style='color:red; font-size:11px'>The secret code should have been announced or displayed at the session location.</span></h5>
+      <div class="dryfta_form_row checkinSecretDiv" >
+      <input type="text" name="checkinSecret" class="checkinSecret" id="checkinSecret" maxlength="4" />
+      </div>
+      <div class="dryfta_form_row CheckinValDiv" id="checkinButtonParam" ></div>
+      </div>
+  </div>
+</div>
+					  </div></div>
+					  </div></div>
+<footer class="footer">
+<div class="container" style="padding-top:0px;padding-bottom:0px;">
+<div class="footer_copyLeft"> 
+		<div class="moduletable">
+					
+<script type="text/javascript">
+function gotoContentSection(){
+	document.getElementById('dryftacom_content_section').focus();
+	return false;
+}
+</script>
+
+<div class="dry-logo">
+		<div class="dayfta_logo_img"><a href="../index.html"><img src="https://dryfta-assets.s3-accelerate.amazonaws.com/assets/is4si2019/images/1552162878smallworldorangenetworki.png" alt="Site Logo Image" title="Site Logo Image"/></a>
+	<input type="button" title="Go to content section" value="Go to content section" onclick="gotoContentSection();" style="opacity:0;height: 1px;float: right;width:1px;padding:0;margin:0;"/>
+	</div>
+		<div class="dryfta_logo_title"><a href="../index.html">IS4SI 2019</a>
+	
+	</div>
+</div>
+		</div>
+	
+</div>
+<div class="footer_right_social_R">
+
+
+
+
+</div>
+<div class="clr"></div>
+<div class="footer_copyright">
+		<div class="moduletablepowered_by">
+					
+
+<div class="custompowered_by"  >
+	<p><img style="border-radius: 3px; height: 14px; padding: 12px 0 11px; vertical-align: middle;" alt="Dryfta Logo" src="https://dryfta.com/powered-by-dryfta.png"><a target="_blank" href="https://dryfta.com/?utm_source=poweredby&utm_medium=website&utm_campaign=clientlist"> Dryfta event tools for academia & non-profits </a></p></div>
+		</div>
+	
+</div>
+<div class="clr"></div>
+<input type="button" style="opacity:0;height:1px;width:1px;padding:0px;margin:0px;float:right;" value="Go to top" onclick="gotoTopSection();" title="Go to top"/>
+</div>
+</footer>
+
+<!-- Dryfta core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script>window.jQuery || document.write('<script src="../templates/gaia-theme/js/jquery.min.js"><\/script>')</script>
+<script src="../templates/gaia-theme/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug 
+<script src="https://is4si2019.com/templates/gaia-theme/js/ie10-viewport-bug-workaround.js"></script>-->
+<script src="../templates/gaia-theme/js/custom.js"></script>
+<script>
+jQuery(document).ready(function () {
+  // jQuery("nav.navbar-float-top").autoHidingNavbar();
+  var topmenu = jQuery('#top_menu_login').html();
+
+  jQuery('#top_menu_login').remove();
+  jQuery('#d_mainmenu').append(topmenu);
+});
+</script>
+
+
+<div class="dryfta_trans_popupB" id="checkInternet" style="display:none; background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;height: 100%;left: 0;padding: 5px;position: fixed;top: 0;width: 100%;z-index: 999;">
+<div style="position: fixed; transition: all 0.8s ease-in-out 0.2s; background: rgb(254, 180, 0) none repeat scroll 0% 0%; color: rgb(255, 255, 255); bottom: 0px; border: 1px solid rgb(253, 154, 0); border-radius: 2px; margin: 0px 0px -2px -8px; height: 105px; padding:15px 15px 20px 20px; width: 260px;">
+<span style="font-weight: 600; display: inline-block; font-size: 14px; margin-bottom: 6px;"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Disconnected from server</span><br>
+<span style="font-size:12px;display: inline-block;line-height: 15px;">You are disconnected from the server. The changes you made may not be saved. Please check when connected.</span>
+</div>
+<div class="loader">
+<div class="inner one"></div>
+<div class="inner two"></div>
+<div class="inner three"></div>
+</div>
+</div>
+</body>
+</html>
+
